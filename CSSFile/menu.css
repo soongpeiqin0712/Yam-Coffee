@@ -1,0 +1,923 @@
+
+    .Page_Hero{
+        height: 100vh;
+        background-color: #F3E9DC;
+        padding-top: 2.5%;
+    }
+
+    .Page_Promotion {
+        position: relative;
+        background-color: white;
+        padding-top: 2.5%;
+        height: 100vh;
+    }
+
+    .Page_Coffee {
+        background-color: #F3E9DC;
+        padding: 100px 8%;
+    }
+
+    .Page_Beverage {
+        background-color: white;
+        height: 140vh;
+    }
+
+    .Page_Dessert {
+        background-color: #F3E9DC;
+        height: 140vh;
+    }
+
+    /*New Product*/
+    .New_Product_Present{
+        width: 80%;
+        height: 500px;
+        margin-top: 0;
+        margin-left: 10%;
+        border-radius: 20px;
+        box-sizing:border-box;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Product_Image{
+        width:40%;
+        height:400px;
+        display:flex;
+        justify-content:center;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-left: 100px;
+    }
+
+    .Product_Image img{
+        width:100%;
+        max-height:400px;
+        display: block;
+        object-fit:cover;
+        opacity:1;
+        transition:
+            opacity .35s ease,
+            transform .35s ease;
+    }
+
+    .Product_Image img.hide{
+        opacity:0;
+        transform:scale(.95);
+    }
+
+    .Product_Info{
+        width:45%;
+        color: #5E3023;
+        position: relative;
+        opacity:1;
+        transform:translateX(0);
+        transition:
+            opacity .35s ease,
+            transform .35s ease;
+    }
+
+    .Product_Info.hide{
+        opacity:0;
+        transform:translateX(40px);
+    }
+
+    #Product_Description_JS{
+        white-space: pre-line;
+    }
+
+    .New_Arrival {
+        position: absolute;
+        top: 20%;
+        left: 55%;
+        padding: 7px 16px;
+        color: white;
+        background-color: #C08552;
+        font-family: 'Averia Libre', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        border-radius: 20px;
+    }
+    .Product_Info h2{
+        font-family: 'Averia Libre', sans-serif;
+        font-size:40px;
+        margin-bottom:20px;
+    }
+
+    .Product_Info p{
+        font-family: 'Poppins', sans-serif;
+        font-size:20px;
+        line-height:1.8;
+    }
+
+    .Botton{
+        position:absolute;
+        right:35px;
+        bottom:25px;
+        display:flex;
+        align-items:center;
+        gap:15px;
+    }
+
+    .Botton button{
+        width:45px;
+        height:45px;
+        border:none;
+        border-radius:50%;
+        cursor:pointer;
+        font-size:22px;
+        background: #F3E9DC;
+        transition:.3s;
+    }
+
+    .Botton button:hover{
+        background:#f5d3aa;
+        transform:scale(1.1);
+    }
+
+    .Evaluate {
+        background-color: #F3E9DC;
+        width: 90%;
+        min-height: 250px;
+        margin: 5% auto 0;
+        padding: 25px;
+        border-radius: 30px;
+        box-sizing: border-box;
+    }
+
+    .Evaluate h2 {
+        margin: 0 0 15px 2.5%;
+        color: #5E3023;
+        font-family: "Averia Libre", sans-serif;
+    }
+
+    .Evaluate_table {
+        width: 95%;
+        margin: auto;
+        border-collapse: separate;
+        border-spacing: 15px;
+        table-layout: fixed;
+    }
+
+    .Evaluate_table td {
+        padding: 20px;
+        vertical-align: top;
+        border: none;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .Evaluate_table h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #5E3023;
+        font-family: "Averia Libre", sans-serif;
+    }
+
+    .Evaluate_table p {
+        color: #895737;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .Evaluate_table .Stars {
+        color: #e7a83e;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
+    /*Promotion*/
+
+    .Promotion_Label {
+        display: inline-block;
+        margin-left: 5%;
+        padding: 7px 16px;
+        color: white;
+        background-color: #C08552;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        border-radius: 20px;
+    }
+
+    .Main_Promotion{
+        width: 80%;
+        height: 45%;
+        margin-left: 10%;
+        padding: 20px;
+    }
+
+    .Promotion_Information {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Promotion_Information td {
+        text-align: left;
+        vertical-align: middle;
+        padding: 10px;
+    }
+
+    .Promotion_Information td:nth-child(odd) {
+        width: 25%;
+    }
+
+    .Promotion_Information td:nth-child(even) {
+        width: 25%;
+        text-align: left;
+    }
+
+    .Promotion_Information img{
+        border:5px solid #895737;
+    }
+
+    .Promotion_Information h3{
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        vertical-align: top;
+        color: #5E3023;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 40px;
+    }
+
+    .Promotion_Information p {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .Promotion_Information td img {
+        display: block;
+        width: 90%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .Secondary_Promotion {
+        width: 90%;
+        margin: 20px auto 0;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .Discount {
+        min-width: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .Discount img {
+        display: block;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .Discount_Info {
+        padding-top: 12px;
+        text-align: left;
+    }
+
+    .Discount_Info h3 {
+        min-height: 48px;
+        margin: 0 0 10px;
+        color: #5E3023;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .Discount_Info p {
+        margin: 5px 0;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .Original_Price {
+        color: #999;
+        font-size: 18px;
+    }
+
+    .Discount_Price {
+        color: #C08552;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .Discount_Rate{
+        border-radius: 50px;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        color: #895737;
+    }
+
+    /*Coffee*/
+
+    .Coffee_Label{
+        display: inline-block;
+        margin-left: 5%;
+        margin-top: 5%;
+        padding: 8px 16px;
+        color: white;
+        background-color: #C08552;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        border-radius: 20px;
+    }
+
+    .Coffee_Top_Salles_Menu{
+        width: 90%;
+        margin: 20px auto 0;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        background-color:#F3E9DC;
+    }
+
+    .Coffee_2ND_Salles,
+    .Coffee_1ST_Salles,
+    .Coffee_3RD_Salles{
+        min-width: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: #F3E9DC;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .Coffee_1ST_Salles{
+        border: 5px solid gold;
+        transition: 0.5s;
+    }
+
+    .Coffee_2ND_Salles{
+        border: 5px solid silver;
+        transition: 0.5s;
+    }
+
+    .Coffee_3RD_Salles{
+        border: 5px solid burlywood;
+        transition: 0.5s;
+    }
+
+    .Coffee_1ST_Salles:hover{
+        transform: translateY(-15px);
+        transition: 0.5s ease;
+    }
+
+    .Coffee_2ND_Salles:hover{
+        transform: translateY(-10px);
+        transition: 0.5s ease;
+    }
+
+    .Coffee_3RD_Salles:hover{
+        transform: translateY(-5px);
+        transition: 0.5s ease;
+    }
+
+    .Coffee_2ND_Salles img,
+    .Coffee_1ST_Salles img,
+    .Coffee_3RD_Salles img {
+        display: block;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .Coffee_2ND_Salles_Info,
+    .Coffee_1ST_Salles_Info,
+    .Coffee_3RD_Salles_Info {
+        padding-top: 12px;
+        text-align: left;
+    }
+
+    .Coffee_2ND_Salles_Info h2,
+    .Coffee_1ST_Salles_Info h2,
+    .Coffee_3RD_Salles_Info h2 {
+        min-height: 20px;
+        margin: 0 0 10px;
+        color:gold;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 20px;
+    }
+
+    .Coffee_2ND_Salles_Info h3,
+    .Coffee_1ST_Salles_Info h3,
+    .Coffee_3RD_Salles_Info h3 {
+        min-height: 20px;
+        margin: 0 0 10px;
+        color: #5E3023;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 20px;
+    }
+
+    .Coffee_2ND_Salles_Info p,
+    .Coffee_1ST_Salles_Info p,
+    .Coffee_3RD_Salles_Info p {
+        font-family: "Poppins", sans-serif;
+    }
+
+    .Price {
+        margin: 0 0 10px;
+        color: #895737;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .Introduce{
+        font-size: 18px;
+        color: #C08552;
+    }
+
+    .Coffee_Menu {
+        width: 90%;
+        margin: 30px auto;
+        padding-bottom: 50px;
+    }
+
+    .Coffee_List {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        opacity: 1;
+        transform: translateY(0);
+        transition: 0.35s ease;
+    }
+
+    .Coffee_List.hide {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    .Coffee_Card {
+        padding: 15px;
+        background-color: #F3E9DC;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+    }
+
+    .Coffee_Card:hover {
+        transform: translateY(-5px);
+    }
+
+    .Coffee_Card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .Coffee_Card h3 {
+        margin-bottom: 8px;
+        color: #5E3023;
+        font-family: "Averia Libre", sans-serif;
+    }
+
+    .Coffee_Card .Price {
+        color: #895737;
+        font-weight: bold;
+    }
+
+    .Coffee_Card .Introduce {
+        color: #C08552;
+        line-height: 1.5;
+    }
+
+    .Coffee_Button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .Coffee_Button button {
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        color: #5E3023;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .Coffee_Button button:hover {
+        color: white;
+        background-color: #C08552;
+        transform: scale(1.1);
+    }
+
+    /*Beverage*/
+    .Beverage_Label{
+        display: inline-block;
+        margin-left: 5%;
+        margin-top: 5%;
+        padding: 8px 16px;
+        color: white;
+        background-color: #C08552;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        border-radius: 20px;
+    }
+
+    .Beverage_Top_Salles_Menu{
+        width: 90%;
+        margin: 20px auto 0;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .Beverage_2ND_Salles,
+    .Beverage_1ST_Salles,
+    .Beverage_3RD_Salles{
+        min-width: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .Beverage_1ST_Salles{
+        border: 5px solid gold;
+        transition: 0.5s;
+    }
+
+    .Beverage_2ND_Salles{
+        border: 5px solid silver;
+        transition: 0.5s;
+    }
+
+    .Beverage_3RD_Salles{
+        border: 5px solid burlywood;
+        transition: 0.5s;
+    }
+
+    .Beverage_1ST_Salles:hover{
+        transform: translateY(-15px);
+        transition: 0.5s ease;
+    }
+
+    .Beverage_2ND_Salles:hover{
+        transform: translateY(-10px);
+        transition: 0.5s ease;
+    }
+
+    .Beverage_3RD_Salles:hover{
+        transform: translateY(-5px);
+        transition: 0.5s ease;
+    }
+
+    .Beverage_2ND_Salles img,
+    .Beverage_1ST_Salles img,
+    .Beverage_3RD_Salles img {
+        display: block;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .Beverage_2ND_Salles_Info,
+    .Beverage_1ST_Salles_Info,
+    .Beverage_3RD_Salles_Info {
+        padding-top: 12px;
+        text-align: left;
+    }
+
+    .Beverage_2ND_Salles_Info h2,
+    .Beverage_1ST_Salles_Info h2,
+    .Beverage_3RD_Salles_Info h2 {
+        min-height: 20px;
+        margin: 0 0 10px;
+        color:darkgoldenrod;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 20px;
+    }
+
+    .Beverage_2ND_Salles_Info h3,
+    .Beverage_1ST_Salles_Info h3,
+    .Beverage_3RD_Salles_Info h3 {
+        min-height: 20px;
+        margin: 0 0 10px;
+        color: #5E3023;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 20px;
+    }
+
+    .Beverage_2ND_Salles_Info p,
+    .Beverage_1ST_Salles_Info p,
+    .Beverage_3RD_Salles_Info p {
+        font-family: "Poppins", sans-serif;
+
+    }
+
+    .Beverage_Menu {
+        width: 90%;
+        margin: 30px auto;
+        padding-bottom: 50px;
+        
+    }
+
+    .Beverage_List {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        opacity: 1;
+        transform: translateY(0);
+        transition: 0.35s ease;
+    }
+
+    .Beverage_List.hide {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    .Beverage_Card {
+        padding: 15px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+    }
+
+    .Beverage_Card:hover {
+        transform: translateY(-5px);
+    }
+
+    .Beverage_Card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .Beverage_Card h3 {
+        margin-bottom: 8px;
+        color: #5E3023;
+        font-family: "Averia Libre", sans-serif;
+    }
+
+    .Beverage_Card .Price {
+        color: #895737;
+        font-weight: bold;
+    }
+
+    .Beverage_Card .Introduce {
+        color: #C08552;
+        line-height: 1.5;
+    }
+
+    .Beverage_Button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .Beverage_Button button {
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 50%;
+        background-color: #f5d3aa;
+        color: #5E3023;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .Beverage_Button button:hover {
+        color: white;
+        background-color: #C08552;
+        transform: scale(1.1);
+    }
+
+    /*Dessert*/
+    .Dessert_Label{
+        display: inline-block;
+        margin-left: 5%;
+        margin-top: 5%;
+        padding: 8px 16px;
+        color: white;
+        background-color: #C08552;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        border-radius: 20px;
+    }
+
+    .Dessert_Top_Salles_Menu{
+        width: 90%;
+        margin: 20px auto 0;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .Dessert_2ND_Salles,
+    .Dessert_1ST_Salles,
+    .Dessert_3RD_Salles{
+        min-width: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: #F3E9DC;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .Dessert_1ST_Salles{
+        border: 5px solid gold;
+        transition: 0.5s;
+    }
+
+    .Dessert_2ND_Salles{
+        border: 5px solid silver;
+        transition: 0.5s;
+    }
+
+    .Dessert_3RD_Salles{
+        border: 5px solid burlywood;
+        transition: 0.5s;
+    }
+
+    .Dessert_1ST_Salles:hover{
+        transform: translateY(-15px);
+        transition: 0.5s ease;
+    }
+
+    .Dessert_2ND_Salles:hover{
+        transform: translateY(-10px);
+        transition: 0.5s ease;
+    }
+
+    .Dessert_3RD_Salles:hover{
+        transform: translateY(-5px);
+        transition: 0.5s ease;
+    }
+
+    .Dessert_2ND_Salles img,
+    .Dessert_1ST_Salles img,
+    .Dessert_3RD_Salles img {
+        display: block;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .Dessert_2ND_Salles_Info,
+    .Dessert_1ST_Salles_Info,
+    .Dessert_3RD_Salles_Info {
+        padding-top: 12px;
+        text-align: left;
+    }
+
+    .Dessert_2ND_Salles_Info h2,
+    .Dessert_1ST_Salles_Info h2,
+    .Dessert_3RD_Salles_Info h2 {
+        min-height: 20px;
+        margin: 0 0 10px;
+        color:gold;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 20px;
+    }
+
+    .Dessert_2ND_Salles_Info h3,
+    .Dessert_1ST_Salles_Info h3,
+    .Dessert_3RD_Salles_Info h3 {
+        min-height: 20px;
+        margin: 0 0 10px;
+        color: #5E3023;
+        font-family: "Averia Libre", sans-serif;
+        font-size: 20px;
+    }
+
+    .Dessert_2ND_Salles_Info p,
+    .Dessert_1ST_Salles_Info p,
+    .Dessert_3RD_Salles_Info p {
+        font-family: "Poppins", sans-serif;
+    }
+
+    .Dessert_Menu {
+        width: 90%;
+        margin: 30px auto;
+        padding-bottom: 50px;
+        
+    }
+
+    .Dessert_List {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        opacity: 1;
+        transform: translateY(0);
+        transition: 0.35s ease;
+    }
+
+    .Dessert_List.hide {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    .Dessert_Card {
+        padding: 15px;
+        background-color: #F3E9DC;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+    }
+
+    .Dessert_Card:hover {
+        transform: translateY(-5px);
+    }
+
+    .Dessert_Card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .Dessert_Card h3 {
+        margin-bottom: 8px;
+        color: #5E3023;
+        font-family: "Averia Libre", sans-serif;
+    }
+
+    .Dessert_Card .Price {
+        color: #895737;
+        font-weight: bold;
+    }
+
+    .Dessert_Card .Introduce {
+        color: #C08552;
+        line-height: 1.5;
+    }
+
+    .Dessert_Button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .Dessert_Button button {
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        color: #5E3023;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .Dessert_Button button:hover {
+        color: white;
+        background-color: #C08552;
+        transform: scale(1.1);
+    }
