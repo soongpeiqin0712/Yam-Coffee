@@ -283,10 +283,10 @@
         overflow: hidden;
     }
 
-.Discount:hover{
-    transform: translateY(-15px);
-    transition: 0.5s ease;
-}
+    .Discount:hover{
+        transform: translateY(-15px);
+        transition: 0.5s ease;
+    }
 
     .Discount img {
         display: block;
