@@ -32,7 +32,7 @@
     }
     /* 背景图地址 */
     .hero-img { background-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de5661'); }
-    .story-img { background-image: url('Image/about/17.png'); }
+    .story-img { background-image: url('../Image/about/17.png'); }
     .mission-img, .philo-img { background-image: url('https://images.unsplash.com/photo-1509042239860-f550870bd97'); }
     .team-img { background-image: url('https://images.unsplash.com/photo-1521017432531-fbd92d768814'); }
     .choose-img { background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085'); }
@@ -487,9 +487,9 @@
         background-size: cover;
         background-position: center;
     }
-    .avatar-1 { background-image: url("Image/about/1.jpg"); }
-    .avatar-2 { background-image: url("Image/about/2.jpg"); }
-    .avatar-3 { background-image: url("Image/about/16.png"); }
+    .avatar-1 { background-image: url("../Image/about/1.jpg"); }
+    .avatar-2 { background-image: url("../Image/about/2.jpg"); }
+    .avatar-3 { background-image: url("../Image/about/16.png"); }
     .team-card h4 {
         color: #5E3023;
         font-weight: 500;
