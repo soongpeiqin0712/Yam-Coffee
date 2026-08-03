@@ -212,6 +212,22 @@
         font-family:'Poppins',sans-serif;
     }
 
+    section h2,
+    .store-info h2 {
+        position: relative;
+    }
+
+    section h2::after,
+    .store-info h2::after {
+        content: "";
+        display: block;
+        width: 90px;
+        height: 4px;
+        background: #C08552;
+        margin: 15px auto 0;
+        border-radius: 5px;
+    }
+
     /*RESPONSIVE*/
     @media(max-width:768px){
         .navbar{
