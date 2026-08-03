@@ -48,21 +48,11 @@
         padding:80px 10%;
     }
 
-section h2 {
-    text-align: center;
-    font-size: 42px;
-    margin-bottom: 45px;
-    position: relative;
-}
-
-section h2::after {
-    content: "";
-    display: block;
-    width: 80px;          /* 横线长度 */
-    height: 4px;          /* 横线粗细 */
-    background: #C08552;  /* 横线颜色 */
-    margin: 15px auto 0;  /* 与标题距离，并置中 */
-    border-radius: 2px;
+    section h2 { 
+        text-align:center; 
+        font-size:42px; 
+        margin-bottom:45px; 
+    }
 
     /*STORE INFORMATION*/
     .store-info{
