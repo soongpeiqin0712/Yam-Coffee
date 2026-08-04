@@ -167,15 +167,11 @@ body {
 .Evaluate_Scroll {
     width: 95%;
     margin: auto;
-
     display: flex;
     gap: 20px;
-
     overflow-x: auto;
     overflow-y: hidden;
-
     padding: 10px 5px 20px;
-
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
