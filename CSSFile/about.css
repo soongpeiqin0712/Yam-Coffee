@@ -580,7 +580,7 @@
     /* 标题强制水平居中，增加标题上方、下方间距，远离顶部边框 */
     .core-values-card h2 {
     text-align: center;
-    margin-top: 0;
+    margin-top: 40px;
     margin-bottom: 32px;
     width: 100%;
     display: block;
@@ -615,7 +615,7 @@
 
     .values h3{
         text-align: center;
-        margin: 0 0 35px;
+        margin: 40px 0 35px;
     }
     /* 强制移除cream-card边框、圆角、阴影 */
     .content-card.cream-card {
@@ -623,6 +623,7 @@
         background: transparent ;
         border-radius: 0 ;
         box-shadow: none ;
+        padding-top: 50px;
     }
     .content-card.cream-card:hover {
         transform: none ;
