@@ -348,7 +348,7 @@ const Beverage = [
         image: "Image/menu/Beverage/Oolong Tea.png",
         name: "Oolong Tea",
         price: "RM5.00",
-        description: "Oolong Tea"
+        description: "Fragrant and layered, steeped in timeless elegance."
     },
     {
         image: "Image/menu/Beverage/Pu-erh Tea.png",
