@@ -105,11 +105,15 @@
         </nav>
     </header>
 
-        <section class="Page_Hero">
+                <button id="Cart_Button">
+            🛒 Cart (<span id="Cart_Count">0</span>)
+        </button>
+
+        <section class="Page_Hero" id="New_Products">
             <article class="New_Product_Present">
 
                 <div class="Product_Image">
-                    <img id="Product_Image_JS" src="Image/menu/Beverage/Coconut Coffee.png">
+                    <img id="Product_Image_JS" src="Image Folder/Beverage/Coconut Coffee.png">
                 </div>
 
                 <span class="New_Arrival">NEW ARRIVAL!</span>
@@ -120,6 +124,11 @@
                         Fresh coconut milk with premium Arabica coffee.
                         Enjoy the clash between sweet and bitter
                     </p>
+                    <p id="Product_Price_JS" class="Price">RM8.80</p>
+
+                    <button id="New_Product_Cart" class="Add_Cart" data-name="Coconut Latte" data-price="RM8.80">
+                        Add to Cart
+                    </button>
                 </div>
 
                 <div class="Botton">
@@ -141,16 +150,16 @@
                     </div>
 
                     <div class="Evaluate_Card">
-                        <h3>Handsome Boy</h3>
+                        <h3>Soon Pei Qing</h3>
                         <p class="Stars">★★★★☆</p>
                         <p>
-                            I like the coconut aroma.
+                            I like the coconut coffee.
                             It goes very well with the coffee.
                         </p>
                     </div>
 
                     <div class="Evaluate_Card">
-                        <h3>A Student</h3>
+                        <h3>Soon Yu</h3>
                         <p class="Stars">★★★★★</p>
                         <p>
                             Pistachio Latte is a delicious drink.
@@ -159,10 +168,10 @@
                     </div>
 
                     <div class="Evaluate_Card">
-                        <h3>Coffee Lover</h3>
+                        <h3>Li ZuoQiang</h3>
                         <p class="Stars">★★★★★</p>
                         <p>
-                            The coffee aroma is rich and the texture is very smooth.
+                            Pistachio Latte have a great nut smell.
                         </p>
                     </div>
 
@@ -170,28 +179,84 @@
                         <h3>Happy Customer</h3>
                         <p class="Stars">★★★★☆</p>
                         <p>
-                            Good environment, friendly service and delicious drinks.
+                            Peppermint Mocha is quite freshing and not too sweet.
+                        </p>
+                    </div>
+
+                    <div class="Evaluate_Card">
+                        <h3>Coffee Lover</h3>
+                        <p class="Stars">★★★★☆</p>
+                        <p>
+                            My children love the Peppermint Mocha. It is a great drink for children.
+                        </p>
+                    </div>
+
+                    <div class="Evaluate_Card">
+                        <h3>Handsome Boy</h3>
+                        <p class="Stars">★★★★☆</p>
+                        <p>
+                            Sea Salt Caramel Latte have a great caramel taste and it is not too sweet. I would order it again.
+                        </p>
+                    </div>
+
+                    <div class="Evaluate_Card">
+                        <h3>Finance Worker</h3>
+                        <p class="Stars">★★★★★</p>
+                        <p>
+                            Sea Salt Caramel Latte is a great drink for me. When I taste It I feel that I am at the beach and enjoy the sea smell.
+                        </p>
+                    </div>
+
+                    <div class="Evaluate_Card">
+                        <h3>Lucky Women</h3>
+                        <p class="Stars">★★★★★</p>
+                        <p>
+                            Spanish Latte is an authentic and delicious drink. I feel like I am in Spain.
+                        </p>
+                    </div>
+
+                    <div class="Evaluate_Card">
+                        <h3>Robot</h3>
+                        <p class="Stars">★★★★★</p>
+                        <p>
+                            Spanish Latte have a heavy milk taste. I like it very much.
+                        </p>
+                    </div>
+
+                    <div class="Evaluate_Card">
+                        <h3>Happy Customer</h3>
+                        <p class="Stars">★★★★★</p>
+                        <p>
+                            Very Good!!!!!!
                         </p>
                     </div>
                 </div>
-            </article>
+        </article>
 
         </section>
 
-        <section id="promo" class="Page_Promotion">
+        <section class="Page_Promotion" id="Promotion">
             <span class="Promotion_Label">PROMOTION</span>
             <article class="Main_Promotion">
                 <table class="Promotion_Information">
                     <tr>
-                        <td><img src="Image/menu/Beverage/White Chocolate Mocha.png"></td>
+                        <td><img src="Image Folder/Beverage/White Chocolate Mocha.png"></td>
                         <td><h3>White Chocolate Mocha</h3>
                             <p class="Original_Price"><del>RM12.9</del></p>
+                            <p class="Discount_Rate">-30%</p>
                             <p class="Discount_Price">RM8.80</p>
+                            <button class="Add_Cart" data-name="White Chocolate Mocha" data-price="RM8.80">
+                                Add to Cart
+                            </button>
                         </td>
-                        <td><img src="Image/menu/Beverage/Hazelnut Latte.png"></td>
+                        <td><img src="Image Folder/Beverage/Hazelnut Latte.png"></td>
                         <td><h3>Hazelnut Latte</h3>
                             <p class="Original_Price"><del>RM10.9</del></p>
+                            <p class="Discount_Rate">-30%</p>
                             <p class="Discount_Price">RM6.60</p>
+                            <button class="Add_Cart" data-name="Hazelnut Latte" data-price="RM6.60">
+                                Add to Cart
+                            </button>
                         </td>
                     </tr>
                 </table>
@@ -202,79 +267,108 @@
             <article class="Secondary_Promotion">
 
                 <div class="Discount">
-                    <img src="Image/menu/Beverage/Rose Latte.png">
+                    <img src="Image Folder/Beverage/Rose Latte.png">
                     <div class="Discount_Info">
                         <h3>Rose Latte</h3>
 
                         <p class="Original_Price"><del>RM12.90</del></p>
+                        <p class="Discount_Rate">-30%</p>
                         <p class="Discount_Price">RM8.80</p>
+
+                        <button class="Add_Cart" data-name="Rose Latte" data-price="RM8.80">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
 
 
                 <div class="Discount">
-                <img src="Image/menu/Beverage/Flat White.png">
+                <img src="Image Folder/Beverage/Flat White.png">
                     <div class="Discount_Info">
                         <h3>Flat White</h3>
 
                         <p class="Original_Price"><del>RM13.90</del></p>
+                        <p class="Discount_Rate">-30%</p>
                         <p class="Discount_Price">RM9.90</p>
+
+                        <button class="Add_Cart" data-name="Flat White" data-price="RM9.90">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
 
 
                 <div class="Discount">
-                <img src="Image/menu/Beverage/Espresso Macchiato.png">
+                <img src="Image Folder/Beverage/Espresso Macchiato.png">
                     <div class="Discount_Info">
                         <h3>Espresso Macchiato</h3>
 
                         <p class="Original_Price"><del>RM14.90</del></p>
+                        <p class="Discount_Rate">-30%</p>
                         <p class="Discount_Price">RM10.90</p>
-                        </div>
+
+                        <button class="Add_Cart" data-name="Espresso Macchiato" data-price="RM10.90">
+                            Add to Cart
+                        </button>
                     </div>
+                </div>
 
                 <div class="Discount">
-                    <img src="Image/menu/Beverage/Café au Lait.png">
+                    <img src="Image Folder/Beverage/Café au Lait.png">
                     <div class="Discount_Info">
                         <h3>Café au Lait</h3>
 
                         <p class="Original_Price"><del>RM15.90</del></p>
+                        <p class="Discount_Rate">-30%</p>
                         <p class="Discount_Price">RM11.90</p>
+
+                        <button class="Add_Cart" data-name="Café au Lait" data-price="RM11.90">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
 
             </article>
         </section>
 
-        <section id="coffee" class="Page_Coffee">
+        <section class="Page_Coffee" id="Coffee">
             <span class="Coffee_Label">Coffee</span>
             <article class="Coffee_Top_Salles_Menu">
                 <div class="Coffee_2ND_Salles">
-                    <img src="Image/menu/Beverage/Vanilla Latte.png">
+                    <img src="Image Folder/Beverage/Vanilla Latte.png">
                     <div class="Coffee_2ND_Salles_Info">
                         <h2>2ND</h2><h3>Vanilla Latte</h3>
                         <p class="Price">RM12.90</p>
                         <p class="Introduce">The sweetness of vanilla paired with the creamy aroma of latte</p>
+                        <button class="Add_Cart" data-name="Vanilla Latte" data-price="RM12.90">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
                     
                     
                 <div class="Coffee_1ST_Salles">
-                    <img src="Image/menu/Beverage/Orange Mocha.png">
+                    <img src="Image Folder/Beverage/Orange Mocha.png">
                     <div class="Coffee_1ST_Salles_Info">
                         <h2>1ST</h2><h3>Orange Mocha</h3>
                         <p class="Price">RM9.90</p>
                         <p class="Introduce">The tartness of oranges paired with the creamy aroma of latte</p>
+                        <button class="Add_Cart" data-name="Orange Mocha" data-price="RM9.90">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
                     
                     
                 <div class="Coffee_3RD_Salles">
-                    <img src="Image/menu/Beverage/Espresso Tonic.png">
+                    <img src="Image Folder/Beverage/Espresso Tonic.png">
                     <div class="Coffee_3RD_Salles_Info">
                         <h2>3RD</h2><h3>Espresso Tonic</h3>
                         <p class="Price">RM8.50</p>
                         <p class="Introduce">Espresso with tonic water and ice</p>
+                        <button class="Add_Cart" data-name="Espresso Tonic" data-price="RM8.50">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </article>
@@ -284,7 +378,7 @@
 
                 <div class="Coffee_Button">
                     <button id="Coffee_Back">❮</button>
-                    <span id="Coffee_Page">1 / 1</span>
+                    <span id="Coffee_Page" style="font-family: 'Poppins', sans-serif;">1 / 1</span>
                     <button id="Coffee_Next">❯</button>
                 </div>
             </article>
@@ -293,36 +387,45 @@
 
 
 
-        <section id="beverage" class="Page_Beverage">
+        <section class="Page_Beverage" id="Beverage">
             <span class="Beverage_Label">Beverage</span>
             <article class="Beverage_Top_Salles_Menu">
                 <div class="Beverage_2ND_Salles">
-                    <img src="Image/menu/Beverage/Lemon Tea.png">
+                    <img src="Image Folder/Beverage/Lemon Tea.png">
                     <div class="Beverage_2ND_Salles_Info">
                         <h2>2ND</h2>
                         <h3>Lemon Tea</h3>
                         <p class="Price">RM3.00</p>
-                        <p class="Introduce">Bright citrus, gracefully steeped in timeless refreshment.</p>
+                        <p class="Introduce">Bright with citrus, steeped in timeless elegance.</p>
+                        <button class="Add_Cart" data-name="Lemon Tea" data-price="RM3.00">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
 
                 <div class="Beverage_1ST_Salles">
-                    <img src="Image/menu/Beverage/Mint Sparkling Water.png">
+                    <img src="Image Folder/Beverage/Mint Sparkling Water.png">
                     <div class="Beverage_1ST_Salles_Info">
                         <h2>1ST</h2>
                         <h3>Mint Sparkling Water</h3>
                         <p class="Price">RM4.00</p>
-                        <p class="Introduce">A whisper of mint, sparkling with pure refreshment.</p>
+                        <p class="Introduce">A whisper of mint, a sparkle of pure refreshment.</p>
+                        <button class="Add_Cart" data-name="Mint Sparkling Water" data-price="RM4.00">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
 
                 <div class="Beverage_3RD_Salles">
-                    <img src="Image/menu/Beverage/Grape Juice.png">
+                    <img src="Image Folder/Beverage/Grape Juice.png">
                     <div class="Beverage_3RD_Salles_Info">
                         <h2>3RD</h2>
                         <h3>Grape Juice</h3>
                         <p class="Price">RM6.00</p>
-                        <p class="Introduce">The pure richness of grapes, gracefully poured.</p>
+                        <p class="Introduce">Rich with nature’s sweetness, refined in every sip.</p>
+                        <button class="Add_Cart" data-name="Grape Juice" data-price="RM6.00">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </article>
@@ -332,7 +435,7 @@
 
                 <div class="Beverage_Button">
                     <button id="Beverage_Back">❮</button>
-                    <span id="Beverage_Page">1 / 1</span>
+                    <span id="Beverage_Page" style="font-family: 'Poppins', sans-serif;">1 / 1</span>
                     <button id="Beverage_Next">❯</button>
                 </div>
             </article>
@@ -341,36 +444,45 @@
 
 
 
-        <section id="dessert" class="Page_Dessert">
+        <section class="Page_Dessert" id="Dessert">
             <span class="Dessert_Label">Dessert</span>
             <article class="Dessert_Top_Salles_Menu">
-                <div class="Dessert_3RD_Salles">
-                    <img src="Image/menu/FOOD/Sandwich.png">
+                <div class="Dessert_2ND_Salles">
+                    <img src="Image Folder/FOOD/Sandwich.png">
                     <div class="Dessert_2ND_Salles_Info">
                         <h2>2ND</h2>
                         <h3>Sandwich</h3>
                         <p class="Price">RM8.90</p>
-                        <p class="Introduce"></p>
+                        <p class="Introduce">With distinct layers and a rich filling, every bite is satisfying.</p>
+                        <button class="Add_Cart" data-name="Sandwich" data-price="RM8.90">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
 
                 <div class="Dessert_1ST_Salles">
-                    <img src="Image/menu/FOOD/Waffles.png">
+                    <img src="Image Folder/FOOD/Waffles.png">
                     <div class="Dessert_1ST_Salles_Info">
                         <h2>1ST</h2>
                         <h3>Waffles</h3>
                         <p class="Price">RM6.00</p>
-                        <p class="Introduce"></p>
+                        <p class="Introduce">Golden and crisp, crafted for timeless indulgence.</p>
+                        <button class="Add_Cart" data-name="Waffles" data-price="RM6.00">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
 
                 <div class="Dessert_3RD_Salles">
-                    <img src="Image/menu/FOOD/Mushroom soup.png">
+                    <img src="Image Folder/FOOD/Mushroom soup.png">
                     <div class="Dessert_3RD_Salles_Info">
                         <h2>3RD</h2>
                         <h3>Mushroom soup</h3>
                         <p class="Price">RM10.00</p>
-                        <p class="Introduce"></p>
+                        <p class="Introduce">Earthy mushrooms, simmered into velvety comfort.</p>
+                        <button class="Add_Cart" data-name="Mushroom soup" data-price="RM10.00">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </article>
@@ -379,12 +491,20 @@
 
                 <div class="Dessert_Button">
                     <button id="Dessert_Back">❮</button>
-                    <span id="Dessert_Page">1 / 1</span>
+                    <span id="Dessert_Page" style="font-family: 'Poppins', sans-serif;">1 / 1</span>
                     <button id="Dessert_Next">❯</button>
                 </div>
             </article>
             
         </section>
+
+        <nav class="Bottom_Navigation" aria-label="Menu category navigation">
+            <a href="#New_Products" class="Bottom_Navigation_Link">New Products</a>
+            <a href="#Promotion" class="Bottom_Navigation_Link">Promotion</a>
+            <a href="#Coffee" class="Bottom_Navigation_Link">Coffee</a>
+            <a href="#Beverage" class="Bottom_Navigation_Link">Beverage</a>
+            <a href="#Dessert" class="Bottom_Navigation_Link">Dessert</a>
+        </nav>
         <script src="JavaScriptFile/menu.js"></script>
 
         <!--===============FOOTER================-->
