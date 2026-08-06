@@ -1012,14 +1012,11 @@ body {
     top: 20px;
     right: 20px;
     z-index: 999;
-
     padding: 12px 18px;
     border: none;
     border-radius: 25px;
-
     color: white;
     background-color: #5E3023;
-
     font-size: 16px;
     cursor: pointer;
 }
@@ -1028,13 +1025,10 @@ body {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-
     border: none;
     border-radius: 10px;
-
     color: white;
     background-color: #895737;
-
     cursor: pointer;
 }
 

@@ -772,6 +772,7 @@ DessertNext.onclick = () => {
 };
 
 showDessert();
+showDessert();
 
 let Cart = [];
 
