@@ -3,7 +3,7 @@ body {
 }
 
 .Page_Hero{
-    height: 100vh;
+    height: 120%;
     background-color: #F3E9DC;
     padding-top: 2.5%;
 }
@@ -12,7 +12,7 @@ body {
     position: relative;
     background-color: white;
     padding-top: 2.5%;
-    height: 100vh;
+    height: 120%;
 }
 
 .Page_Coffee {
