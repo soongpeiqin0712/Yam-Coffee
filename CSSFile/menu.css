@@ -1010,7 +1010,7 @@ body {
 #Cart_Button {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 1;
     padding: 12px 18px;
     border: none;
