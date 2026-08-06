@@ -2,30 +2,35 @@ const New_Products = [
 {
     image:"Image/menu/Beverage/Coconut Coffee.png",
     title:"Coconut Latte",
+    price: "RM8.80",
     Introduction:"Fresh coconut milk with premium Arabica coffee.\nEnjoy the clash between sweet and bitter"
 },
 
 {
     image:"Image/menu/Beverage/Pistachio Latte.png",
     title:"Pistachio Latte",
+    price: "RM13.90",
     Introduction:"The nutty aroma of pistachios combined with \nthe richness of a latte makes every bite a comforting experience."
 },
 
 {
     image:"Image/menu/Beverage/Peppermint Mocha.png",
     title:"Peppermint Mocha",
+    price: "RM8.50",
     Introduction:"Cool mint meets rich mocha, one bite is refreshing, \nthe next is fragrant."
 },
 
 {
     image:"Image/menu/Beverage/Sea Salt Caramel Latte.png",
     title:"Sea Salt Caramel Latte",
+    price: "RM12.00",
     Introduction:"Sea salt brings out the rich aroma of caramel, \ncreating a perfect balance of salty and sweet with a lingering aftertaste."
 },
 
 {
     image:"Image/menu/Beverage/Spanish Latte.png",
     title:"Spanish Latte",
+    price: "RM12.00",
     Introduction:"The rich aroma of coffee blends perfectly with the delicate fragrance of milk, \ncreating a mellow and lingering taste that is elegant in its own right."
 }
 
@@ -33,16 +38,22 @@ const New_Products = [
 
 let Present = 0;
 
-function showProduct(){
+function showProduct() {
+    const product = New_Products[Present];
 
-    document.getElementById("Product_Image_JS").src = New_Products[Present].image;
+    document.getElementById("Product_Image_JS").src = product.image;
+    document.getElementById("Product_Title_JS").textContent = product.title;
+    document.getElementById("Product_Description_JS").textContent =product.Introduction;
 
-    document.getElementById("Product_Title_JS").textContent = New_Products[Present].title;
+    document.getElementById("Product_Price_JS").textContent =product.price;
 
-    document.getElementById("Product_Description_JS").textContent = New_Products[Present].Introduction;
+    const newProductCart = document.getElementById("New_Product_Cart");
 
-    document.getElementById("Page").textContent =`${Present+1} / ${New_Products.length}`;
+    newProductCart.dataset.name = product.title;
+    newProductCart.dataset.price = product.price;
+    newProductCart.textContent = "Add to Cart";
 
+    document.getElementById("Page").textContent =`${Present + 1} / ${New_Products.length}`;
 }
 
 const nextButton = document.getElementById("Next_Botton");
@@ -88,6 +99,37 @@ function changeProduct(New_Present){
     },350);
 
 }
+
+const EvaluateScroll = document.querySelector(".Evaluate_Scroll");
+const EvaluateCards = document.querySelectorAll(".Evaluate_Card");
+
+function playEvaluate() {
+    if (!EvaluateScroll || EvaluateCards.length === 0) {
+        return;
+    }
+
+    const cardWidth = EvaluateCards[0].offsetWidth;
+    const gap = 20;
+    const nextPosition =
+        EvaluateScroll.scrollLeft + cardWidth + gap;
+
+    const maxScroll =
+        EvaluateScroll.scrollWidth - EvaluateScroll.clientWidth;
+
+    if (nextPosition >= maxScroll) {
+        EvaluateScroll.scrollTo({
+            left: 0,
+            behavior: "smooth"
+        });
+    } else {
+        EvaluateScroll.scrollTo({
+            left: nextPosition,
+            behavior: "smooth"
+        });
+    }
+}
+
+setInterval(playEvaluate, 3000);
 
 const coffees = [
     {
@@ -249,12 +291,18 @@ function showCoffee() {
     const PageProducts_Coffee = coffees.slice(start_Coffee, start_Coffee + ProductsPerPage_coffee);
     const TotalPages_Coffee = Math.ceil(coffees.length / ProductsPerPage_coffee);
 
-    coffeeList.innerHTML = PageProducts_Coffee.map(coffee => `
+coffeeList.innerHTML = PageProducts_Coffee.map(coffee => `
         <div class="Coffee_Card">
             <img src="${coffee.image}">
             <h3>${coffee.name}</h3>
             <p class="Price">${coffee.price}</p>
             <p class="Introduce">${coffee.description}</p>
+
+            <button class="Add_Cart"
+                data-name="${coffee.name}"
+                data-price="${coffee.price}">
+                Add to Cart
+            </button>
         </div>
     `).join("");
 
@@ -348,7 +396,7 @@ const Beverage = [
         image: "Image/menu/Beverage/Oolong Tea.png",
         name: "Oolong Tea",
         price: "RM5.00",
-        description: "Fragrant and layered, steeped in timeless elegance."
+        description: "Oolong Tea"
     },
     {
         image: "Image/menu/Beverage/Pu-erh Tea.png",
@@ -480,6 +528,12 @@ function showBeverage() {
             <h3>${beverage.name}</h3>
             <p class="Price">${beverage.price}</p>
             <p class="Introduce">${beverage.description}</p>
+
+            <button class="Add_Cart"
+                data-name="${beverage.name}"
+                data-price="${beverage.price}">
+                Add to Cart
+            </button>
         </div>
     `).join("");
 
@@ -736,6 +790,12 @@ function showDessert() {
             <h3>${Dessert.name}</h3>
             <p class="Price">${Dessert.price}</p>
             <p class="Introduce">${Dessert.description}</p>
+
+            <button class="Add_Cart"
+                data-name="${Dessert.name}"
+                data-price="${Dessert.price}">
+            Add to Cart
+            </button>
         </div>
     `).join("");
 
@@ -773,6 +833,7 @@ DessertNext.onclick = () => {
 
 showDessert();
 showDessert();
+
 
 let Cart = [];
 
