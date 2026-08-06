@@ -772,3 +772,49 @@ DessertNext.onclick = () => {
 };
 
 showDessert();
+
+let Cart = [];
+
+const CartCount = document.getElementById("Cart_Count");
+const CartButton = document.getElementById("Cart_Button");
+
+document.addEventListener("click", function(event) {
+    if (event.target.classList.contains("Add_Cart")) {
+        const product = {
+            name: event.target.dataset.name,
+            price: Number(
+                event.target.dataset.price.replace("RM", "")
+            )
+        };
+
+        Cart.push(product);
+        CartCount.textContent = Cart.length;
+
+        event.target.textContent = "Added!";
+
+        setTimeout(function() {
+            event.target.textContent = "Add to Cart";
+        }, 800);
+    }
+});
+
+CartButton.addEventListener("click", function() {
+    if (Cart.length === 0) {
+        alert("Your Cart is empty.");
+        return;
+    }
+
+    let productList = "";
+    let total = 0;
+
+    Cart.forEach(function(product) {
+        productList += `${product.name} - RM${product.price.toFixed(2)}\n`;
+        total += product.price;
+    });
+
+    alert(
+        "Shopping Cart\n\n" +
+        productList +
+        "\nTotal: RM" + total.toFixed(2)
+    );
+});
