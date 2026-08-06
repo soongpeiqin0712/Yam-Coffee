@@ -3,7 +3,7 @@ body {
 }
 
 .Page_Hero{
-    height: 120%;
+    height: 100vh;
     background-color: #F3E9DC;
     padding-top: 2.5%;
 }
@@ -34,7 +34,7 @@ body {
 .New_Product_Present{
     width: 80%;
     height: 500px;
-    margin-top: 4%;
+    margin-top: 0;
     margin-left: 10%;
     border-radius: 20px;
     box-sizing:border-box;
@@ -92,7 +92,7 @@ body {
 
 .New_Arrival {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 55%;
     padding: 7px 16px;
     color: white;
@@ -167,11 +167,15 @@ body {
 .Evaluate_Scroll {
     width: 95%;
     margin: auto;
+
     display: flex;
     gap: 20px;
+
     overflow-x: auto;
     overflow-y: hidden;
+
     padding: 10px 5px 20px;
+
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
@@ -1001,4 +1005,90 @@ body {
     color: white;
     background-color: #C08552;
     transform: scale(1.1);
+}
+
+#Cart_Button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+
+    color: white;
+    background-color: #5E3023;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Add_Cart {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #895737;
+
+    cursor: pointer;
+}
+
+.Add_Cart:hover {
+    background-color: #C08552;
+}
+
+/*Navigation*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-bottom: 100px;
+}
+
+#new-products,
+#promotion,
+#coffee,
+#beverage,
+#food {
+    scroll-margin-top: 20px;
+}
+
+.Bottom_Navigation {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px;
+    border: 1px solid #895737;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.Bottom_Navigation_Link {
+    display: block;
+    padding: 11px 18px;
+    border-radius: 30px;
+    color: #895737;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.Bottom_Navigation_Link:hover {
+    background-color: #F3E9DC;
 }
