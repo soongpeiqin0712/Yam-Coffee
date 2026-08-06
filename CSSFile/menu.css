@@ -1009,8 +1009,8 @@ body {
 
 #Cart_Button {
     position: fixed;
-    bottom: 30px;
-    left: 30px;
+    top: 30px;
+    right: 30px;
     z-index: 1;
     padding: 12px 18px;
     border: none;
@@ -1024,7 +1024,7 @@ body {
 .Add_Cart {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     border: none;
     border-radius: 10px;
     color: white;
