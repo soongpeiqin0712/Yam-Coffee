@@ -1079,3 +1079,19 @@ body {
 .Bottom_Navigation_Link:hover {
     background-color: #F3E9DC;
 }
+
+body:has(#new-products:target) .New_Link,
+body:has(#promotion:target) .Promotion_Link,
+body:has(#coffee:target) .Coffee_Link,
+body:has(#beverage:target) .Beverage_Link,
+body:has(#food:target) .Food_Link {
+    color: white;
+    background-color: #895737;
+    box-shadow: 0 5px 15px rgba(137, 87, 55, 0.3);
+}
+
+body:not(:has(:target)) .New_Link {
+    color: white;
+    background-color: #895737;
+    box-shadow: 0 5px 15px rgba(137, 87, 55, 0.3);
+}
