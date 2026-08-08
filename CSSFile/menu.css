@@ -1009,8 +1009,8 @@ body {
 
 #Cart_Button {
     position: fixed;
-    top: 30px;
-    right: 20px;
+    bottom: 30px;
+    left: 20px;
     z-index: 1;
     padding: 12px 18px;
     border: none;
