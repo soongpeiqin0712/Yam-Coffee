@@ -167,30 +167,23 @@ body {
 .Evaluate_Scroll {
     width: 95%;
     margin: auto;
-
     display: flex;
     gap: 20px;
-
     overflow-x: auto;
     overflow-y: hidden;
-
     padding: 10px 5px 20px;
-
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
 
 .Evaluate_Card {
-    flex: 0 0 31%;
-
+    flex: 0 0 30%;
     min-width: 280px;
     min-height: 180px;
     padding: 20px;
     box-sizing: border-box;
-
     background-color: white;
     border-radius: 15px;
-
     scroll-snap-align: start;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
