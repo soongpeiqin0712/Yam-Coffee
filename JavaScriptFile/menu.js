@@ -113,8 +113,7 @@ function playEvaluate() {
     const nextPosition =
         EvaluateScroll.scrollLeft + cardWidth + gap;
 
-    const maxScroll =
-        EvaluateScroll.scrollWidth - EvaluateScroll.clientWidth;
+    const maxScroll = EvaluateScroll.scrollWidth - EvaluateScroll.clientWidth;
 
     if (nextPosition >= maxScroll) {
         EvaluateScroll.scrollTo({
@@ -537,8 +536,7 @@ function showBeverage() {
         </div>
     `).join("");
 
-    BeveragePage.textContent =
-        `${CurrentPage_Beverage + 1} / ${totalPagesBeverage}`;
+    BeveragePage.textContent =`${CurrentPage_Beverage + 1} / ${totalPagesBeverage}`;
 }
 
 function changeBeveragePage(newPage) {
@@ -799,8 +797,7 @@ function showDessert() {
         </div>
     `).join("");
 
-    DessertPage.textContent =
-        `${CurrentPage_Dessert + 1} / ${totalPagesDessert}`;
+    DessertPage.textContent =`${CurrentPage_Dessert + 1} / ${totalPagesDessert}`;
 }
 
 function changeDessertPage(newPage) {
