@@ -159,37 +159,29 @@
         background:#C08552;
     }
 
-/* ================================
-   CONTACT SECTION
-================================ */
-
+/* CONTACT SECTION */
 .contact-section {
     width: 100%;
+    min-height: 100vh;
     padding: 50px 20px;
     box-sizing: border-box;
+    background: #F5EBDD;
 }
 
-/* ================================
-   CONTACT BOX
-================================ */
-
+/* CONTACT BOX */
 .contact-box {
     width: 90%;
     max-width: 550px;
     margin: 0 auto;
     padding: 35px 25px;
     box-sizing: border-box;
-
-    background: #fff;
-
-    /* REMOVE OUTER BOX */
+    background: transparent;
     border: none;
     border-radius: 0;
     box-shadow: none;
 }
 
 /* CONTACT TITLE */
-
 .contact-box h2 {
     margin: 0 0 30px 0;
     text-align: center;
@@ -209,8 +201,8 @@
     border-radius: 5px;
 }
 
-/* FORM */
 
+/* FORM */
 .contact-section form {
     width: 100%;
     max-width: 500px;
@@ -248,7 +240,7 @@
     box-sizing: border-box;
     border: 1px solid #C08552;
     border-radius: 6px;
-    background: #fff;
+    background: #FFFFFF;
     color: #555;
     font-size: 12px;
     font-family: 'Poppins', sans-serif;
@@ -260,6 +252,7 @@
     border-color: #5E3023;
 }
 
+/* RADIO BUTTON */
 .consultation-option input {
     position: absolute;
     opacity: 0;
@@ -274,19 +267,20 @@
     box-sizing: border-box;
     border: 1.5px solid #C08552;
     border-radius: 50%;
-    background: #fff;
+    background: #FFFFFF;
     transition: 0.2s;
 }
 
 .consultation-option input:checked + .radio-circle {
     border-color: #5E3023;
     background: #5E3023;
-    box-shadow: inset 0 0 0 3px #fff;
+    box-shadow: inset 0 0 0 3px #FFFFFF;
 }
 
-/* INPUT GROUP */
+/* Input Group */
 .input-group {
     width: 100%;
+
     margin-bottom: 20px;
 }
 
@@ -313,7 +307,7 @@
     padding: 11px 13px;
     border: 1px solid #C08552;
     border-radius: 6px;
-    background: #fff;
+    background: #FFFFFF;
     color: #333;
     font-size: 13px;
     font-family: 'Poppins', sans-serif;
@@ -337,6 +331,7 @@
 }
 
 /* SUBMIT BUTTON */
+
 .contact-section button {
     display: block;
     width: 100%;
@@ -345,7 +340,7 @@
     border: none;
     border-radius: 6px;
     background: #895737;
-    color: white;
+    color: #FFFFFF;
     font-size: 11px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
@@ -367,8 +362,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* MOBILE */
+
+/* MOBILE RESPONSIVE */
+
 @media (max-width: 600px) {
+
     .contact-section {
         padding: 35px 15px;
     }
@@ -396,6 +394,22 @@
         font-size: 13px;
     }
 }
+
+.contact-section {
+    background: #F5EBDD;
+}
+
+.input-group input,
+.input-group textarea {
+    background: #FFFFFF;
+}
+
+.contact-box {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
 
 @media (max-width: 600px) {
 
