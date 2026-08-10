@@ -159,72 +159,241 @@
         background:#C08552;
     }
 
-    /*CONTACT FORM*/
+/*CONTACT SECTION*/
+
+.contact-section {
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.contact-box {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #C08552;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-box h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    color: #5E3023;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-box h2::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    margin: 12px auto 0;
+    background: #C08552;
+    border-radius: 5px;
+}
+
+.contact-section form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.consultation-group {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.form-title {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.consultation-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    width: 100%;
+}
+
+.consultation-option {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    border: 1px solid #C08552;
+    border-radius: 7px;
+    background: #fff;
+    color: #555;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.consultation-option:hover {
+    border-color: #5E3023;
+}
+
+/*RADIO*/
+.consultation-option input {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio-circle {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    margin-right: 12px;
+    box-sizing: border-box;
+    border: 2px solid #C08552;
+    border-radius: 50%;
+    background: #fff;
+    transition: .2s;
+}
+
+
+.consultation-option input:checked + .radio-circle {
+    border-color: #5E3023;
+    background: #5E3023;
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-group label span {
+    color: #999;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #C08552;
+    border-radius: 7px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: .3s;
+}
+
+.input-group input {
+    height: 43px;
+}
+
+.input-group textarea {
+    min-height: 126px;
+    resize: vertical;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #5E3023;
+}
+
+/*SUBMIT*/
+
+.contact-section button {
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 0;
+    border: none;
+    border-radius: 6px;
+    background: #895737;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contact-section button:hover {
+    background: #5E3023;
+}
+
+#successMessage {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*MOBILE*/
+
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 30px 15px;
+    }
+
+    .contact-box {
+        padding: 25px 20px;
+    }
+
+    .contact-box h2 {
+        font-size: 24px;
+    }
+
+    .consultation-options {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .consultation-option {
+        padding: 0 8px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 600px) {
+
     .contact-section form {
-        max-width:700px;
-        margin:auto;
+        max-width: 100%;
     }
 
-    .input-group {
-        margin-bottom:20px;
+    .consultation-options {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .input-group input,
-    .input-group textarea {
-        width:100%;
-        padding:16px;
-        border:2px solid #C08552;
-        border-radius:10px;
-        font-size:16px;
-        font-family:'Poppins',sans-serif;
-        outline:none;
+    .consultation-option {
+        padding: 0 10px;
+        font-size: 12px;
     }
 
-    .input-group input:focus,
-    .input-group textarea:focus {
-        border-color:#5E3023;
-    }
-
-    .contact-section button {
-        width:100%;
-        padding:15px;
-        border:none;
-        background:#895737;
-        color:white;
-        font-size:18px;
-        border-radius:10px;
-        cursor:pointer;
-        transition:.3s;
-        font-family:'Poppins',sans-serif;
-    }
-
-    .contact-section button:hover {
-        background:#5E3023;
-    }
-
-    #successMessage {
-        margin-top:20px;
-        text-align:center;
-        color:green;
-        font-weight:600;
-        font-family:'Poppins',sans-serif;
-    }
-
-    section h2,
-    .store-info h2 {
-        position: relative;
-    }
-
-    section h2::after,
-    .store-info h2::after {
-        content: "";
-        display: block;
-        width: 90px;
-        height: 4px;
-        background: #C08552;
-        margin: 15px auto 0;
-        border-radius: 5px;
-    }
+}
 
     /*RESPONSIVE*/
     @media(max-width:768px){
