@@ -206,90 +206,89 @@
     </table>
 </section>
 
-<form id="contactForm">
+<section class="contact-section">
+    <div class="contact-box">
+        <h2>CONTACT US</h2>
+        <form id="contactForm">
 
-    <!-- CONSULTATION TYPE -->
-    <div class="consultation-group">
-        <label class="form-title">CONSULTATION TYPE</label>
+            <div class="consultation-group">
+                <label class="form-title">
+                    CONSULTATION TYPE
+                </label>
 
-        <div class="consultation-options">
+                <div class="consultation-options">
+                    <label class="consultation-option">
+                        <input type="radio" name="consultation" value="General Enquires">
+                        <span class="radio-circle"></span>
+                        <span>General Enquires</span>
+                    </label>
 
-            <label class="consultation-option">
-                <input type="radio" name="consultation" value="General Enquires">
-                <span class="radio-circle"></span>
-                <span>General Enquires</span>
-            </label>
+                    <label class="consultation-option">
+                        <input type="radio" name="consultation" value="Business Opportunities">
+                        <span class="radio-circle"></span>
+                        <span>Business Opportunities</span>
+                    </label>
 
-            <label class="consultation-option">
-                <input type="radio" name="consultation" value="Business Opportunities">
-                <span class="radio-circle"></span>
-                <span>Business Opportunities</span>
-            </label>
+                    <label class="consultation-option">
+                        <input type="radio" name="consultation" value="Product & Services">
+                        <span class="radio-circle"></span>
+                        <span>Product & Services</span>
+                    </label>
 
-            <label class="consultation-option">
-                <input type="radio" name="consultation" value="Product & Services">
-                <span class="radio-circle"></span>
-                <span>Product & Services</span>
-            </label>
+                    <label class="consultation-option">
+                        <input type="radio" name="consultation" value="Job Opportunities">
+                        <span class="radio-circle"></span>
+                        <span>Job Opportunities</span>
+                    </label>
+                </div>
+            </div>
 
-            <label class="consultation-option">
-                <input type="radio" name="consultation" value="Job Opportunities">
-                <span class="radio-circle"></span>
-                <span>Job Opportunities</span>
-            </label>
+            <div class="input-group">
+                <label for="name">
+                    NAME
+                    <span>(YOUR NAME)</span>
+                </label>
+                <input type="text" id="name" name="name">
+            </div>
 
-        </div>
+
+            <div class="input-group">
+                <label for="phone">
+                    CONTACT NUMBER
+                    <span>(YOUR MOBILE NUMBER)</span>
+                </label>
+                <input type="text" id="phone" name="phone">
+            </div>
+
+            <div class="input-group">
+                <label for="email">
+                    EMAIL
+                    <span>(YOUR EMAIL ADDRESS)</span>
+                </label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="input-group">
+                <label for="subject">
+                    SUBJECT
+                </label>
+                <input type="text" id="subject" name="subject">
+            </div>
+
+            <div class="input-group">
+                <label for="message">
+                    MESSAGE/ ENQUIRIES
+                </label>
+                <textarea id="message" name="message" rows="6"></textarea>
+            </div>
+
+            <button type="submit">
+                SUBMIT
+            </button>
+            <p id="successMessage"></p>
+        </form>
     </div>
-
-    <div class="input-group">
-        <label for="name">
-            NAME
-            <span>(YOUR NAME)</span>
-        </label>
-        <input type="text" id="name" name="name">
-    </div>
-
-    <div class="input-group">
-        <label for="phone">
-            CONTACT NUMBER
-            <span>(YOUR MOBILE NUMBER)</span>
-        </label>
-
-        <input type="text" id="phone" name="phone">
-    </div>
-
-    <div class="input-group">
-        <label for="email">
-            EMAIL
-            <span>(YOUR EMAIL ADDRESS)</span>
-        </label>
-
-        <input type="email" id="email" name="email">
-    </div>
-
-    <div class="input-group">
-        <label for="subject">
-            SUBJECT
-        </label>
-
-        <input type="text" id="subject" name="subject">
-    </div>
-
-    <div class="input-group message-group">
-        <label for="message">
-            MESSAGE/ ENQUIRIES
-        </label>
-        
-        <textarea id="message" name="message" rows="6"></textarea>
-    </div>
-
-
-    <!-- SUBMIT -->
-    <button type="submit">
-        SUBMIT
-    </button>
-    <p id="successMessage"></p>
-</form>
+</section>
     
 <!--===============FOOTER================-->
     <footer>
