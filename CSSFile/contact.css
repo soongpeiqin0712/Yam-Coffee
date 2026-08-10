@@ -159,7 +159,9 @@
         background:#C08552;
     }
 
-/*CONTACT SECTION*/
+/* ================================
+   CONTACT SECTION
+================================ */
 
 .contact-section {
     width: 100%;
@@ -167,17 +169,26 @@
     box-sizing: border-box;
 }
 
+/* ================================
+   CONTACT BOX
+================================ */
+
 .contact-box {
-    width: 100%;
-    max-width: 700px;
+    width: 90%;
+    max-width: 550px;
     margin: 0 auto;
-    padding: 35px 40px;
+    padding: 35px 25px;
     box-sizing: border-box;
+
     background: #fff;
-    border: 1px solid #C08552;
-    border-radius: 10px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+    /* REMOVE OUTER BOX */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
+
+/* CONTACT TITLE */
 
 .contact-box h2 {
     margin: 0 0 30px 0;
@@ -191,20 +202,22 @@
 .contact-box h2::after {
     content: "";
     display: block;
-    width: 90px;
-    height: 4px;
+    width: 70px;
+    height: 3px;
     margin: 12px auto 0;
     background: #C08552;
     border-radius: 5px;
 }
 
+/* FORM */
+
 .contact-section form {
     width: 100%;
-    max-width: 100%;
+    max-width: 500px;
     margin: 0 auto;
 }
 
-
+/* CONSULTATION TYPE */
 .consultation-group {
     width: 100%;
     margin-bottom: 22px;
@@ -222,7 +235,7 @@
 .consultation-options {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
+    gap: 8px;
     width: 100%;
 }
 
@@ -230,41 +243,40 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 44px;
+    height: 42px;
     padding: 0 12px;
     box-sizing: border-box;
     border: 1px solid #C08552;
-    border-radius: 7px;
+    border-radius: 6px;
     background: #fff;
     color: #555;
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .consultation-option:hover {
     border-color: #5E3023;
 }
 
-/*RADIO*/
 .consultation-option input {
     position: absolute;
     opacity: 0;
+    cursor: pointer;
 }
 
 .radio-circle {
-    width: 16px;
-    height: 16px;
-    min-width: 16px;
-    margin-right: 12px;
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    margin-right: 10px;
     box-sizing: border-box;
-    border: 2px solid #C08552;
+    border: 1.5px solid #C08552;
     border-radius: 50%;
     background: #fff;
-    transition: .2s;
+    transition: 0.2s;
 }
-
 
 .consultation-option input:checked + .radio-circle {
     border-color: #5E3023;
@@ -272,6 +284,7 @@
     box-shadow: inset 0 0 0 3px #fff;
 }
 
+/* INPUT GROUP */
 .input-group {
     width: 100%;
     margin-bottom: 20px;
@@ -279,7 +292,7 @@
 
 .input-group label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     color: #333;
     font-size: 13px;
     font-weight: 500;
@@ -297,33 +310,33 @@
     display: block;
     width: 100%;
     box-sizing: border-box;
-    padding: 12px 14px;
+    padding: 11px 13px;
     border: 1px solid #C08552;
-    border-radius: 7px;
+    border-radius: 6px;
     background: #fff;
     color: #333;
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Poppins', sans-serif;
     outline: none;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .input-group input {
-    height: 43px;
+    height: 42px;
 }
 
 .input-group textarea {
-    min-height: 126px;
+    min-height: 120px;
     resize: vertical;
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
     border-color: #5E3023;
+    box-shadow: 0 0 0 1px rgba(94, 48, 35, 0.1);
 }
 
-/*SUBMIT*/
-
+/* SUBMIT BUTTON */
 .contact-section button {
     display: block;
     width: 100%;
@@ -333,17 +346,19 @@
     border-radius: 6px;
     background: #895737;
     color: white;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
 
+/* Button hover */
 .contact-section button:hover {
     background: #5E3023;
 }
 
+/* SUCCESS MESSAGE */
 #successMessage {
     margin-top: 20px;
     text-align: center;
@@ -352,29 +367,33 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-/*MOBILE*/
-
+/* MOBILE */
 @media (max-width: 600px) {
     .contact-section {
-        padding: 30px 15px;
+        padding: 35px 15px;
     }
 
     .contact-box {
-        padding: 25px 20px;
+        width: 100%;
+        padding: 25px 15px;
     }
 
     .contact-box h2 {
-        font-size: 24px;
+        font-size: 25px;
+        margin-bottom: 25px;
     }
 
     .consultation-options {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .consultation-option {
-        padding: 0 8px;
-        font-size: 11px;
+        height: 42px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 13px;
     }
 }
 
