@@ -1176,6 +1176,7 @@ body:not(:has(:target)) .New_Link {
     }
 
     #Cart_Button {
-        bottom: 82px;
+        bottom: 95px;
+        right: 10px;
     }
 }
