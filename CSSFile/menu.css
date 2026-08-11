@@ -3,31 +3,35 @@ body {
 }
 
 .Page_Hero{
-    height: 120%;
     background-color: #F3E9DC;
-    padding-top: 2.5%;
 }
 
 .Page_Promotion {
     position: relative;
     background-color: white;
-    padding-top: 2.5%;
-    height: 120%;
 }
 
 .Page_Coffee {
     background-color: #F3E9DC;
-    height: 145%;
 }
 
 .Page_Beverage {
     background-color: white;
-    height: 145%;
 }
 
 .Page_Dessert {
     background-color: #F3E9DC;
-    height: 145%;
+}
+
+.Page_Hero,
+.Page_Promotion,
+.Page_Coffee,
+.Page_Beverage,
+.Page_Dessert {
+    min-height: 100vh;
+    height: auto;
+    box-sizing: border-box;
+    padding: 48px 0 100px;
 }
 
 /*New Product*/
@@ -115,7 +119,7 @@ body {
     line-height:1.8;
 }
 
-.Botton{
+.Button{
     position:absolute;
     right:35px;
     bottom:25px;
@@ -124,7 +128,7 @@ body {
     gap:15px;
 }
 
-.Botton button{
+.Button button{
     width:45px;
     height:45px;
     border:none;
@@ -135,7 +139,7 @@ body {
     transition:.3s;
 }
 
-.Botton button:hover{
+.Button button:hover{
     background:#f5d3aa;
     transform:scale(1.1);
 }
@@ -1038,12 +1042,12 @@ body {
     padding-bottom: 100px;
 }
 
-#new-products,
-#promotion,
-#coffee,
-#beverage,
-#food {
-    scroll-margin-top: 20px;
+#New_Products,
+#Promotion,
+#Coffee,
+#Beverage,
+#Dessert {
+    scroll-margin-top: 24px;
 }
 
 .Bottom_Navigation {
@@ -1094,4 +1098,84 @@ body:not(:has(:target)) .New_Link {
     color: white;
     background-color: #895737;
     box-shadow: 0 5px 15px rgba(137, 87, 55, 0.3);
+}
+
+@media (max-width: 900px) {
+    .New_Product_Present {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 24px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .Product_Image {
+        width: 100%;
+        height: 320px;
+        margin-left: 0;
+    }
+
+    .Product_Info {
+        width: 100%;
+    }
+
+    .New_Arrival {
+        position: static;
+        align-self: flex-start;
+        margin: 20px 0 0;
+    }
+
+    .Button {
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .Secondary_Promotion,
+    .Coffee_Top_Salles_Menu,
+    .Beverage_Top_Salles_Menu,
+    .Dessert_Top_Salles_Menu,
+    .Coffee_List,
+    .Beverage_List,
+    .Dessert_List {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .Secondary_Promotion,
+    .Coffee_Top_Salles_Menu,
+    .Beverage_Top_Salles_Menu,
+    .Dessert_Top_Salles_Menu,
+    .Coffee_List,
+    .Beverage_List,
+    .Dessert_List {
+        grid-template-columns: 1fr;
+    }
+
+    .Product_Image {
+        height: 260px;
+    }
+
+    .Product_Info h2 {
+        font-size: 30px;
+    }
+
+    .Product_Info p {
+        font-size: 16px;
+    }
+
+    .Bottom_Navigation {
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        transform: none;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    #Cart_Button {
+        bottom: 82px;
+    }
 }

@@ -56,8 +56,8 @@ function showProduct() {
     document.getElementById("Page").textContent =`${Present + 1} / ${New_Products.length}`;
 }
 
-const nextButton = document.getElementById("Next_Botton");
-const backButton = document.getElementById("Back_Botton");
+const nextButton = document.getElementById("Next_Button");
+const backButton = document.getElementById("Back_Button");
 
 nextButton.onclick = () => {
     let newPresent = Present + 1;
@@ -292,7 +292,7 @@ function showCoffee() {
 
 coffeeList.innerHTML = PageProducts_Coffee.map(coffee => `
         <div class="Coffee_Card">
-            <img src="${coffee.image}">
+            <img src="${coffee.image}" alt="${coffee.name}">
             <h3>${coffee.name}</h3>
             <p class="Price">${coffee.price}</p>
             <p class="Introduce">${coffee.description}</p>
@@ -523,7 +523,7 @@ function showBeverage() {
 
     BeverageList.innerHTML = pageProducts.map(beverage => `
         <div class="Beverage_Card">
-            <img src="${beverage.image}">
+            <img src="${beverage.image}" alt="${beverage.name}">
             <h3>${beverage.name}</h3>
             <p class="Price">${beverage.price}</p>
             <p class="Introduce">${beverage.description}</p>
@@ -784,7 +784,7 @@ function showDessert() {
 
     DessertList.innerHTML = pageProducts.map(Dessert => `
         <div class="Dessert_Card">
-            <img src="${Dessert.image}">
+            <img src="${Dessert.image}" alt="${Dessert.name}">
             <h3>${Dessert.name}</h3>
             <p class="Price">${Dessert.price}</p>
             <p class="Introduce">${Dessert.description}</p>
@@ -829,8 +829,6 @@ DessertNext.onclick = () => {
 };
 
 showDessert();
-showDessert();
-
 
 let Cart = [];
 
@@ -872,8 +870,6 @@ CartButton.addEventListener("click", function() {
     });
 
     alert(
-        "Shopping Cart\n\n" +
-        productList +
-        "\nTotal: RM" + total.toFixed(2)
+        "Shopping Cart\n\n" + productList + "\nTotal: RM" + total.toFixed(2)
     );
 });
