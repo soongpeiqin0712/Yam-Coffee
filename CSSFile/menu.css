@@ -7,7 +7,6 @@ body {
 }
 
 .Page_Promotion {
-    position: relative;
     background-color: white;
 }
 
@@ -171,23 +170,30 @@ body {
 .Evaluate_Scroll {
     width: 95%;
     margin: auto;
+
     display: flex;
     gap: 20px;
+
     overflow-x: auto;
     overflow-y: hidden;
+
     padding: 10px 5px 20px;
+
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
 
 .Evaluate_Card {
-    flex: 0 0 30%;
+    flex: 0 0 31%;
+
     min-width: 280px;
     min-height: 180px;
     padding: 20px;
     box-sizing: border-box;
+
     background-color: white;
     border-radius: 15px;
+
     scroll-snap-align: start;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -248,36 +254,58 @@ body {
 
 .Main_Promotion{
     width: 80%;
-    height: 45%;
+    min-height: 45%;
     margin-left: 10%;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .Promotion_Information {
     width: 100%;
     height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
 }
 
-.Promotion_Information td {
-    text-align: left;
-    vertical-align: middle;
+.Promotion_Item {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    min-width: 0;
     padding: 10px;
+    box-sizing: border-box;
 }
 
-.Promotion_Information td:nth-child(odd) {
-    width: 25%;
+.Promotion_Image {
+    flex: 0 0 40%;
+    min-width: 0;
+    display: flex;
 }
 
-.Promotion_Information td:nth-child(even) {
-    width: 25%;
+.Promotion_Text {
+    flex: 1;
+    min-width: 0;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
-.Promotion_Information img{
+.Promotion_Text .Add_Cart {
+    margin-top: auto;
+}
+
+.Promotion_Information img {
+    display: block;
+    width: 100%;
+    height: 100%;
     border:5px solid #895737;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
-.Promotion_Information h3{
+.Promotion_Information h3 {
     margin-left: 0;
     margin-right: 0;
     text-align: left;
@@ -301,7 +329,7 @@ body {
     transition: 0.5s ease;
 }
 
-.Promotion_Information td img {
+.Promotion_Information .Promotion_Image img {
     display: block;
     width: 90%;
     height: 100%;
@@ -391,7 +419,7 @@ body {
     border-radius: 20px;
 }
 
-.Coffee_Top_Salles_Menu{
+.Coffee_Top_Sales_Menu{
     width: 90%;
     margin: 20px auto 0;
     padding: 20px;
@@ -403,9 +431,9 @@ body {
     background-color:#F3E9DC;
 }
 
-.Coffee_2ND_Salles,
-.Coffee_1ST_Salles,
-.Coffee_3RD_Salles{
+.Coffee_2ND_Sales,
+.Coffee_1ST_Sales,
+.Coffee_3RD_Sales{
     min-width: 0;
     padding: 15px;
     box-sizing: border-box;
@@ -415,39 +443,39 @@ body {
     overflow: hidden;
 }
 
-.Coffee_1ST_Salles{
+.Coffee_1ST_Sales{
     border: 5px solid gold;
     transition: 0.5s;
 }
 
-.Coffee_2ND_Salles{
+.Coffee_2ND_Sales{
     border: 5px solid silver;
     transition: 0.5s;
 }
 
-.Coffee_3RD_Salles{
+.Coffee_3RD_Sales{
     border: 5px solid burlywood;
     transition: 0.5s;
 }
 
-.Coffee_1ST_Salles:hover{
+.Coffee_1ST_Sales:hover{
     transform: translateY(-15px);
     transition: 0.5s ease;
 }
 
-.Coffee_2ND_Salles:hover{
+.Coffee_2ND_Sales:hover{
     transform: translateY(-10px);
     transition: 0.5s ease;
 }
 
-.Coffee_3RD_Salles:hover{
+.Coffee_3RD_Sales:hover{
     transform: translateY(-5px);
     transition: 0.5s ease;
 }
 
-.Coffee_2ND_Salles img,
-.Coffee_1ST_Salles img,
-.Coffee_3RD_Salles img {
+.Coffee_2ND_Sales img,
+.Coffee_1ST_Sales img,
+.Coffee_3RD_Sales img {
     display: block;
     width: 100%;
     height: 250px;
@@ -455,37 +483,37 @@ body {
     border-radius: 12px;
 }
 
-.Coffee_2ND_Salles_Info,
-.Coffee_1ST_Salles_Info,
-.Coffee_3RD_Salles_Info {
+.Coffee_2ND_Sales_Info,
+.Coffee_1ST_Sales_Info,
+.Coffee_3RD_Sales_Info {
     padding-top: 12px;
     text-align: left;
 }
 
-.Coffee_2ND_Salles_Info h2,
-.Coffee_1ST_Salles_Info h2,
-.Coffee_3RD_Salles_Info h2 {
+.Coffee_2ND_Sales_Info h2,
+.Coffee_1ST_Sales_Info h2,
+.Coffee_3RD_Sales_Info h2 {
     min-height: 20px;
     margin: 0 0 10px;
     font-family: "Averia Libre", sans-serif;
     font-size: 25px;
 }
 
-.Coffee_1ST_Salles_Info h2{
+.Coffee_1ST_Sales_Info h2{
     color:gold;
 }
 
-.Coffee_2ND_Salles_Info h2{
+.Coffee_2ND_Sales_Info h2{
     color:grey;
 }
 
-.Coffee_3RD_Salles_Info h2{
+.Coffee_3RD_Sales_Info h2{
     color:burlywood;
 }
 
-.Coffee_2ND_Salles_Info h3,
-.Coffee_1ST_Salles_Info h3,
-.Coffee_3RD_Salles_Info h3 {
+.Coffee_2ND_Sales_Info h3,
+.Coffee_1ST_Sales_Info h3,
+.Coffee_3RD_Sales_Info h3 {
     min-height: 20px;
     margin: 0 0 10px;
     color: #5E3023;
@@ -493,9 +521,9 @@ body {
     font-size: 20px;
 }
 
-.Coffee_2ND_Salles_Info p,
-.Coffee_1ST_Salles_Info p,
-.Coffee_3RD_Salles_Info p {
+.Coffee_2ND_Sales_Info p,
+.Coffee_1ST_Sales_Info p,
+.Coffee_3RD_Sales_Info p {
     font-family: "Poppins", sans-serif;
 }
 
@@ -610,7 +638,7 @@ body {
     border-radius: 20px;
 }
 
-.Beverage_Top_Salles_Menu{
+.Beverage_Top_Sales_Menu{
     width: 90%;
     margin: 20px auto 0;
     padding: 20px;
@@ -621,9 +649,9 @@ body {
     gap: 20px;
 }
 
-.Beverage_2ND_Salles,
-.Beverage_1ST_Salles,
-.Beverage_3RD_Salles{
+.Beverage_2ND_Sales,
+.Beverage_1ST_Sales,
+.Beverage_3RD_Sales{
     min-width: 0;
     padding: 15px;
     box-sizing: border-box;
@@ -633,39 +661,39 @@ body {
     overflow: hidden;
 }
 
-.Beverage_1ST_Salles{
+.Beverage_1ST_Sales{
     border: 5px solid gold;
     transition: 0.5s;
 }
 
-.Beverage_2ND_Salles{
+.Beverage_2ND_Sales{
     border: 5px solid silver;
     transition: 0.5s;
 }
 
-.Beverage_3RD_Salles{
+.Beverage_3RD_Sales{
     border: 5px solid burlywood;
     transition: 0.5s;
 }
 
-.Beverage_1ST_Salles:hover{
+.Beverage_1ST_Sales:hover{
     transform: translateY(-15px);
     transition: 0.5s ease;
 }
 
-.Beverage_2ND_Salles:hover{
+.Beverage_2ND_Sales:hover{
     transform: translateY(-10px);
     transition: 0.5s ease;
 }
 
-.Beverage_3RD_Salles:hover{
+.Beverage_3RD_Sales:hover{
     transform: translateY(-5px);
     transition: 0.5s ease;
 }
 
-.Beverage_2ND_Salles img,
-.Beverage_1ST_Salles img,
-.Beverage_3RD_Salles img {
+.Beverage_2ND_Sales img,
+.Beverage_1ST_Sales img,
+.Beverage_3RD_Sales img {
     display: block;
     width: 100%;
     height: 250px;
@@ -673,37 +701,37 @@ body {
     border-radius: 12px;
 }
 
-.Beverage_2ND_Salles_Info,
-.Beverage_1ST_Salles_Info,
-.Beverage_3RD_Salles_Info {
+.Beverage_2ND_Sales_Info,
+.Beverage_1ST_Sales_Info,
+.Beverage_3RD_Sales_Info {
     padding-top: 12px;
     text-align: left;
 }
 
-.Beverage_2ND_Salles_Info h2,
-.Beverage_1ST_Salles_Info h2,
-.Beverage_3RD_Salles_Info h2 {
+.Beverage_2ND_Sales_Info h2,
+.Beverage_1ST_Sales_Info h2,
+.Beverage_3RD_Sales_Info h2 {
     min-height: 20px;
     margin: 0 0 10px;
     font-family: "Averia Libre", sans-serif;
     font-size: 20px;
 }
 
-.Beverage_1ST_Salles_Info h2{
+.Beverage_1ST_Sales_Info h2{
     color:gold;
 }
 
-.Beverage_2ND_Salles_Info h2{
+.Beverage_2ND_Sales_Info h2{
     color:grey;
 }
 
-.Beverage_3RD_Salles_Info h2{
+.Beverage_3RD_Sales_Info h2{
     color:burlywood;
 }
 
-.Beverage_2ND_Salles_Info h3,
-.Beverage_1ST_Salles_Info h3,
-.Beverage_3RD_Salles_Info h3 {
+.Beverage_2ND_Sales_Info h3,
+.Beverage_1ST_Sales_Info h3,
+.Beverage_3RD_Sales_Info h3 {
     min-height: 20px;
     margin: 0 0 10px;
     color: #5E3023;
@@ -711,9 +739,9 @@ body {
     font-size: 20px;
 }
 
-.Beverage_2ND_Salles_Info p,
-.Beverage_1ST_Salles_Info p,
-.Beverage_3RD_Salles_Info p {
+.Beverage_2ND_Sales_Info p,
+.Beverage_1ST_Sales_Info p,
+.Beverage_3RD_Sales_Info p {
     font-family: "Poppins", sans-serif;
 
 }
@@ -815,7 +843,7 @@ body {
     border-radius: 20px;
 }
 
-.Dessert_Top_Salles_Menu{
+.Dessert_Top_Sales_Menu{
     width: 90%;
     margin: 20px auto 0;
     padding: 20px;
@@ -826,9 +854,9 @@ body {
     gap: 20px;
 }
 
-.Dessert_2ND_Salles,
-.Dessert_1ST_Salles,
-.Dessert_3RD_Salles{
+.Dessert_2ND_Sales,
+.Dessert_1ST_Sales,
+.Dessert_3RD_Sales{
     min-width: 0;
     padding: 15px;
     box-sizing: border-box;
@@ -838,39 +866,39 @@ body {
     overflow: hidden;
 }
 
-.Dessert_1ST_Salles{
+.Dessert_1ST_Sales{
     border: 5px solid gold;
     transition: 0.5s;
 }
 
-.Dessert_2ND_Salles{
+.Dessert_2ND_Sales{
     border: 5px solid silver;
     transition: 0.5s;
 }
 
-.Dessert_3RD_Salles{
+.Dessert_3RD_Sales{
     border: 5px solid burlywood;
     transition: 0.5s;
 }
 
-.Dessert_1ST_Salles:hover{
+.Dessert_1ST_Sales:hover{
     transform: translateY(-15px);
     transition: 0.5s ease;
 }
 
-.Dessert_2ND_Salles:hover{
+.Dessert_2ND_Sales:hover{
     transform: translateY(-10px);
     transition: 0.5s ease;
 }
 
-.Dessert_3RD_Salles:hover{
+.Dessert_3RD_Sales:hover{
     transform: translateY(-5px);
     transition: 0.5s ease;
 }
 
-.Dessert_2ND_Salles img,
-.Dessert_1ST_Salles img,
-.Dessert_3RD_Salles img {
+.Dessert_2ND_Sales img,
+.Dessert_1ST_Sales img,
+.Dessert_3RD_Sales img {
     display: block;
     width: 100%;
     height: 250px;
@@ -878,37 +906,37 @@ body {
     border-radius: 12px;
 }
 
-.Dessert_2ND_Salles_Info,
-.Dessert_1ST_Salles_Info,
-.Dessert_3RD_Salles_Info {
+.Dessert_2ND_Sales_Info,
+.Dessert_1ST_Sales_Info,
+.Dessert_3RD_Sales_Info {
     padding-top: 12px;
     text-align: left;
 }
 
-.Dessert_2ND_Salles_Info h2,
-.Dessert_1ST_Salles_Info h2,
-.Dessert_3RD_Salles_Info h2 {
+.Dessert_2ND_Sales_Info h2,
+.Dessert_1ST_Sales_Info h2,
+.Dessert_3RD_Sales_Info h2 {
     min-height: 20px;
     margin: 0 0 10px;
     font-family: "Averia Libre", sans-serif;
     font-size: 20px;
 }
 
-.Dessert_1ST_Salles_Info h2{
+.Dessert_1ST_Sales_Info h2{
     color:gold;
 }
 
-.Dessert_2ND_Salles_Info h2{
+.Dessert_2ND_Sales_Info h2{
     color:grey;
 }
 
-.Dessert_3RD_Salles_Info h2{
+.Dessert_3RD_Sales_Info h2{
     color:burlywood;
 }
 
-.Dessert_2ND_Salles_Info h3,
-.Dessert_1ST_Salles_Info h3,
-.Dessert_3RD_Salles_Info h3 {
+.Dessert_2ND_Sales_Info h3,
+.Dessert_1ST_Sales_Info h3,
+.Dessert_3RD_Sales_Info h3 {
     min-height: 20px;
     margin: 0 0 10px;
     color: #5E3023;
@@ -916,9 +944,9 @@ body {
     font-size: 20px;
 }
 
-.Dessert_2ND_Salles_Info p,
-.Dessert_1ST_Salles_Info p,
-.Dessert_3RD_Salles_Info p {
+.Dessert_2ND_Sales_Info p,
+.Dessert_1ST_Sales_Info p,
+.Dessert_3RD_Sales_Info p {
     font-family: "Poppins", sans-serif;
 }
 
@@ -1004,17 +1032,75 @@ body {
     transform: scale(1.1);
 }
 
-/*Shopping Cart*/
+
+
+
+.Coffee_Card,
+.Beverage_Card,
+.Dessert_Card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Coffee_Card .Introduce,
+.Beverage_Card .Introduce,
+.Dessert_Card .Introduce {
+    flex-grow: 1;
+}
+
+.Coffee_Card .Add_Cart,
+.Beverage_Card .Add_Cart,
+.Dessert_Card .Add_Cart {
+    margin-top: auto;
+}
+
+.Coffee_2ND_Sales,
+.Coffee_1ST_Sales,
+.Coffee_3RD_Sales,
+.Beverage_2ND_Sales,
+.Beverage_1ST_Sales,
+.Beverage_3RD_Sales,
+.Dessert_2ND_Sales,
+.Dessert_1ST_Sales,
+.Dessert_3RD_Sales {
+    display: flex;
+    flex-direction: column;
+}
+
+.Coffee_2ND_Sales_Info,
+.Coffee_1ST_Sales_Info,
+.Coffee_3RD_Sales_Info,
+.Beverage_2ND_Sales_Info,
+.Beverage_1ST_Sales_Info,
+.Dessert_2ND_Sales_Info,
+.Dessert_1ST_Sales_Info,
+.Dessert_3RD_Sales_Info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.Coffee_Top_Sales_Menu .Introduce,
+.Beverage_Top_Sales_Menu .Introduce,
+.Dessert_Top_Sales_Menu .Introduce {
+    flex-grow: 1;
+}
+
 #Cart_Button {
     position: fixed;
-    bottom: 30px;
+    bottom: 20px;
     left: 20px;
-    z-index: 1;
+    z-index: 999;
+
     padding: 12px 18px;
     border: none;
     border-radius: 25px;
+
     color: white;
     background-color: #5E3023;
+
     font-size: 16px;
     cursor: pointer;
 }
@@ -1022,11 +1108,14 @@ body {
 .Add_Cart {
     width: 100%;
     padding: 10px;
-    margin-top: 10px;
+    margin-bottom: 10px;
+
     border: none;
     border-radius: 10px;
+
     color: white;
     background-color: #895737;
+
     cursor: pointer;
 }
 
@@ -1043,12 +1132,12 @@ body {
     padding-bottom: 100px;
 }
 
-#New_Products,
-#Promotion,
-#Coffee,
-#Beverage,
-#Dessert {
-    scroll-margin-top: 24px;
+#new-products,
+#promotion,
+#coffee,
+#beverage,
+#food {
+    scroll-margin-top: 20px;
 }
 
 .Bottom_Navigation {
@@ -1085,22 +1174,6 @@ body {
     background-color: #F3E9DC;
 }
 
-body:has(#new-products:target) .New_Link,
-body:has(#promotion:target) .Promotion_Link,
-body:has(#coffee:target) .Coffee_Link,
-body:has(#beverage:target) .Beverage_Link,
-body:has(#food:target) .Food_Link {
-    color: white;
-    background-color: #895737;
-    box-shadow: 0 5px 15px rgba(137, 87, 55, 0.3);
-}
-
-body:not(:has(:target)) .New_Link {
-    color: white;
-    background-color: #895737;
-    box-shadow: 0 5px 15px rgba(137, 87, 55, 0.3);
-}
-
 @media (max-width: 900px) {
     .New_Product_Present {
         width: 90%;
@@ -1133,10 +1206,34 @@ body:not(:has(:target)) .New_Link {
         margin-top: 20px;
     }
 
+    .Main_Promotion {
+        width: 90%;
+        margin: 20px auto 0;
+        padding: 10px;
+    }
+
+    .Promotion_Information {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .Promotion_Item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .Promotion_Image {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .Promotion_Information .Promotion_Image img {
+        width: 100%;
+    }
+
     .Secondary_Promotion,
-    .Coffee_Top_Salles_Menu,
-    .Beverage_Top_Salles_Menu,
-    .Dessert_Top_Salles_Menu,
+    .Coffee_Top_Sales_Menu,
+    .Beverage_Top_Sales_Menu,
+    .Dessert_Top_Sales_Menu,
     .Coffee_List,
     .Beverage_List,
     .Dessert_List {
@@ -1145,10 +1242,33 @@ body:not(:has(:target)) .New_Link {
 }
 
 @media (max-width: 600px) {
+    .Main_Promotion {
+        width: 100%;
+        margin: 20px auto 0;
+        padding: 0 10px;
+    }
+
+    .Promotion_Information {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .Promotion_Item {
+        gap: 12px;
+    }
+
+    .Promotion_Information h3 {
+        font-size: 28px;
+    }
+
+    .Promotion_Text {
+        width: 100%;
+    }
+
     .Secondary_Promotion,
-    .Coffee_Top_Salles_Menu,
-    .Beverage_Top_Salles_Menu,
-    .Dessert_Top_Salles_Menu,
+    .Coffee_Top_Sales_Menu,
+    .Beverage_Top_Sales_Menu,
+    .Dessert_Top_Sales_Menu,
     .Coffee_List,
     .Beverage_List,
     .Dessert_List {
