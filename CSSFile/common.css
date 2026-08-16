@@ -190,6 +190,14 @@
         text-align: center;
     }
 
+    footer h3 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
     .footer_container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
