@@ -301,20 +301,20 @@
 /*-----------------MOBILE RESPONSIVE-------------------*/
 @media (max-width: 768px) {
      /* ----------HEADER & NAV---------- */
-    .navbar {
+     .navbar {
         height: 70px;
-        padding: 10px 5%;
+        padding: 12px 5%;
     }
 
     .logo img {
-        height: 45px;
+        height: 55px;
         width: auto;
     }
 
     .logo h2 {
         font-size: 1.1rem;
     }
-
+  
     .menu-toggle {
         display: block;
         background: transparent;
@@ -333,7 +333,7 @@
         width: 100%;
         display: none;
         flex-direction: column;
-        gap: 0;
+        gap: 12px;
         padding: 10px 0 15px;
         background: var(--coffee);
         box-shadow: 0 8px 18px rgba(0,0,0,.15);
@@ -351,6 +351,10 @@
     .nav-links > li > a {
         display: block;
         padding: 12px 20px;
+    }
+
+    .nav-links a {
+        font-size: 0.75rem;
     }
 
     .nav-links a::after {
