@@ -344,7 +344,11 @@
           min-height: 650px;     
           height: auto;     
           padding: 110px 6% 60px;   
+          background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.20)), 
+          url("../Image/home/img_home_hero.jpg");
+          background-size: cover;
           background-position: center;   
+          background-repeat: no-repeat;
      }
                            
      .hero-content {       
@@ -437,6 +441,13 @@
 
      /*---CTA---*/
      .cta {       
+          background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+          url("../Image/home/img_home_hero.jpg");
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          color: white;
+          text-align: center;
           padding: 60px 5%;    
           background: scroll;
      }    
