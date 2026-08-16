@@ -37,7 +37,7 @@ body {
 .New_Product_Present{
     width: 80%;
     height: 500px;
-    margin-top: 20px;
+    top: 20px;
     margin-left: 10%;
     border-radius: 20px;
     box-sizing:border-box;
