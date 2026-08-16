@@ -336,3 +336,103 @@
         background: white;
         color: var(--coffee);
     }
+
+     }\n\n/*-----------------HOME MOBILE RESPONSIVE-------------------*/
+@media (max-width: 768px) {    
+     .hero {
+          min-height: 650px;     
+          height: auto;     
+          padding: 100px 6% 60px;   
+          background-position: center;   
+     }
+                           
+     .hero-content {       
+          max-width: 100%;   
+     }   
+                           
+     .hero-content h1 {      
+          font-size: 2.5rem;       
+          line-height: 1.15;   
+     }   
+     
+     .hero-content p {      
+          font-size: .95rem;  
+     }   
+                           
+     .hero-content h5 {       
+          font-size: .8rem;       
+          letter-spacing: 2px;   
+     }   
+                           
+     .why-us {      
+          padding: 60px 5%;
+     }   
+                           
+     .why-container {       
+          grid-template-columns: 1fr;      
+          gap: 20px;    
+     }   
+                           
+     .why-us h2,.featured-menu h2,.gallery h2,.cta h2 {      
+          font-size: 2.2rem;
+     }   
+     
+     .section-description {       
+          font-size: .9rem;       
+          margin-bottom: 35px;    
+     }    
+     
+     .featured-menu {        
+          padding: 60px 5%;   
+     }    
+     
+     .menu-grid {        
+          grid-template-columns: 1fr;        
+          gap: 20px;        
+          margin-top: 35px;    
+     }    
+     
+     .menu-card img {
+          height: 200px;    
+     }    
+     
+     .menu-info {       
+          padding: 20px;    
+     }    
+     
+     .menu-info h3 {        
+          font-size: 1.3rem;    
+     }    
+     
+     .gallery {        
+          padding: 60px 5%;    
+     }    
+     
+     .gallery-grid {        
+          grid-template-columns: 1fr;        
+          gap: 15px;        
+          margin-top: 35px;    
+     }    
+     
+     .gallery-item img {        
+          height: 220px;   
+     }   
+     
+     .cta {       
+          padding: 60px 5%;    
+     }    
+     
+     .cta p {        
+          font-size: .95rem;   
+     }    
+     
+     .cta-buttons {
+          flex-direction: column;        
+          align-items: center;        
+          gap: 15px;    
+     }    
+     
+     .cta-buttons a {        
+          width: 220px;        
+          height: 55px;    
+     }
