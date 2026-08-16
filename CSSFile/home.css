@@ -339,27 +339,6 @@
 
 /*-----------------HOME MOBILE RESPONSIVE-------------------*/
 @media (max-width: 768px) {    
-     /*---NAV---*/
-     .navbar {
-        padding: 12px 5%;
-    }
-
-    .logo img {
-        height: 55px;
-    }
-
-    .logo h2 {
-        font-size: 1.1rem;
-    }
-
-    .nav-links {
-        gap: 12px;
-    }
-
-    .nav-links a {
-        font-size: 0.75rem;
-    }
-
      /*---HERO---*/
      .hero {
           min-height: 650px;     
