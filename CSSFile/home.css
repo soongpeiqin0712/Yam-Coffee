@@ -337,17 +337,40 @@
         color: var(--coffee);
     }
 
-     }\n\n/*-----------------HOME MOBILE RESPONSIVE-------------------*/
+/*-----------------HOME MOBILE RESPONSIVE-------------------*/
 @media (max-width: 768px) {    
+     /*---NAV---*/
+     .navbar {
+        padding: 12px 5%;
+    }
+
+    .logo img {
+        height: 55px;
+    }
+
+    .logo h2 {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 0.75rem;
+    }
+
+     /*---HERO---*/
      .hero {
           min-height: 650px;     
           height: auto;     
-          padding: 100px 6% 60px;   
+          padding: 110px 6% 60px;   
           background-position: center;   
      }
                            
      .hero-content {       
-          max-width: 100%;   
+          max-width: 100%;  
+          text-align: center;
      }   
                            
      .hero-content h1 {      
@@ -362,8 +385,9 @@
      .hero-content h5 {       
           font-size: .8rem;       
           letter-spacing: 2px;   
-     }   
-                           
+     }
+     
+     /*---WHY CHOOSE US---*/                      
      .why-us {      
           padding: 60px 5%;
      }   
@@ -374,17 +398,26 @@
      }   
                            
      .why-us h2,.featured-menu h2,.gallery h2,.cta h2 {      
-          font-size: 2.2rem;
+          font-size: 2rem;
      }   
+
+     .why-card {
+          padding: 30px 20px;
+     }
      
      .section-description {       
           font-size: .9rem;       
           margin-bottom: 35px;    
      }    
      
+     /*---FEATURED MENU---*/
      .featured-menu {        
           padding: 60px 5%;   
      }    
+
+     .featured-menu h2 {
+          font-size: 2rem;
+     }
      
      .menu-grid {        
           grid-template-columns: 1fr;        
@@ -403,10 +436,15 @@
      .menu-info h3 {        
           font-size: 1.3rem;    
      }    
-     
+
+     /*---GALLERY---*/
      .gallery {        
           padding: 60px 5%;    
      }    
+
+     .gallery h2 {
+          font-size: 2rem;
+     }
      
      .gallery-grid {        
           grid-template-columns: 1fr;        
@@ -417,10 +455,16 @@
      .gallery-item img {        
           height: 220px;   
      }   
-     
+
+     /*---CTA---*/
      .cta {       
           padding: 60px 5%;    
+          background: scroll;
      }    
+
+     .cta h2 {
+          font-size: 2rem;
+     }
      
      .cta p {        
           font-size: .95rem;   
