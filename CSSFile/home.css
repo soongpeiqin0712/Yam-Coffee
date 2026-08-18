@@ -48,19 +48,6 @@
         font-size: 1.1rem;
         margin-bottom: 30px;
     }
-
-   .hero .btn {
-        background: var(--caramel);
-        color: white;
-        display: inline-block;
-        margin-top: 20px;
-        box-shadow: 0 4px 10px var(--brownie);
-    }
-
-    .btn:hover {
-        background: var(--coffee);
-        transform: translateY(-3px);
-    }
 /*---------------WHY CHOOSE US---------------*/
     .why-us {
         padding: 100px 8%;
