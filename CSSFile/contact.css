@@ -362,72 +362,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-/* MOBILE RESPONSIVE */
-
-@media (max-width: 600px) {
-
-    .contact-section {
-        padding: 35px 15px;
-    }
-
-    .contact-box {
-        width: 100%;
-        padding: 25px 15px;
-    }
-
-    .contact-box h2 {
-        font-size: 25px;
-        margin-bottom: 25px;
-    }
-
-    .consultation-options {
-        grid-template-columns: 1fr;
-    }
-
-    .consultation-option {
-        height: 42px;
-    }
-
-    .input-group input,
-    .input-group textarea {
-        font-size: 13px;
-    }
-}
-
-.contact-section {
-    background: #F5EBDD;
-}
-
-.input-group input,
-.input-group textarea {
-    background: #FFFFFF;
-}
-
-.contact-box {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-}
-
-
-@media (max-width: 600px) {
-
-    .contact-section form {
-        max-width: 100%;
-    }
-
-    .consultation-options {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .consultation-option {
-        padding: 0 10px;
-        font-size: 12px;
-    }
-
-}
-
 @media (max-width: 768px) {
 
     .navbar {
@@ -443,22 +377,180 @@
         flex-shrink: 0;
     }
 
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .store-info {
+        padding: 60px 6%;
+    }
+
+    .store-info h2 {
+        font-size: 42px;
+    }
+
+    .info-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .info-box {
+        min-height: 320px;
+        padding: 35px 25px;
+    }
+
+    .info-box h3 {
+        font-size: 26px;
+    }
+
+    .map iframe {
+        height: 500px;
+    }
+
+    .contact-section {
+        min-height: auto;
+        padding: 60px 6%;
+    }
+
+    .contact-box {
+        width: 100%;
+        max-width: 550px;
+    }
 }
 
-    @media(max-width:500px){
-        .payment-container{
-            grid-template-columns:1fr;
-        }
+@media (max-width: 500px) {
 
-        .hero h1{
-            font-size:34px;
-        }
-
-        .logo span{
-            font-size:24px;
-        }
-
-        .logo img{
-            width:45px;
-        }
+    .hero {
+        height: 65vh;
+        min-height: 450px;
+        padding: 20px;
     }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .btn {
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .store-info {
+        padding: 50px 20px;
+    }
+
+    .store-info h2 {
+        font-size: 32px;
+    }
+
+    .info-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .info-box {
+        min-height: auto;
+        padding: 35px 25px;
+    }
+
+    .info-box img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .info-box h3 {
+        font-size: 24px;
+    }
+
+    .info-box p {
+        font-size: 14px;
+    }
+
+    .map iframe {
+        height: 350px;
+    }
+
+    .hours table {
+        font-size: 14px;
+    }
+
+    .hours td {
+        padding: 14px 10px;
+    }
+
+    .contact-section {
+        min-height: auto;
+        padding: 45px 15px;
+    }
+
+    .contact-box {
+        width: 100%;
+        padding: 25px 10px;
+    }
+
+    .contact-box h2 {
+        font-size: 25px;
+    }
+
+    .contact-section form {
+        max-width: 100%;
+    }
+
+    .consultation-options {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .consultation-option {
+        height: 42px;
+        padding: 0 10px;
+        font-size: 11px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 13px;
+    }
+
+    .contact-section button {
+        width: 100%;
+        height: 44px;
+    }
+
+    .logo span {
+        font-size: 24px;
+    }
+
+    .logo img {
+        width: 45px;
+    }
+}
