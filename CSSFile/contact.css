@@ -1,22 +1,27 @@
 /*HERO*/
 .hero {
-    height:90vh;
+    min-height: 650px;
+    height: 90vh;
+    max-height: 900px;
+    padding: 110px 20px 60px;
+    box-sizing: border-box;
     background-image:
-    linear-gradient(rgba(0,0,0,.45),
-    rgba(0,0,0,.45)),
-    url("../Image/contact/hero-contact.png");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("../Image/contact/hero-contact.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
 .hero-content {
-    width:80%;
-    max-width:700px;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
@@ -561,11 +566,26 @@ section h2 {
     }
 
     .hero {
-        min-height: 550px;
-        height: 75vh;
+        min-height: 600px;
+        height: auto;
+        padding: 130px 30px 80px;
+    }
+
+    .hero-content {
+        width: 85%;
+        max-width: 700px;
     }
 
     .hero h1 {
         font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .btn {
+        padding: 13px 32px;
     }
 }
