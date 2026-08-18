@@ -25,8 +25,9 @@
     }
 
     .hero p {
-        font-size:18px;
-        margin-bottom:35px;
+        margin-bottom:35px
+        color: white;
+        font-size: 1.1rem;
     }
 
     .btn {
@@ -60,11 +61,6 @@
         padding:75px;
     }
 
-    .store-info p{
-        color: white;
-        font-size: 1.1rem;
-        margin-bottom: 30px;
-    }
 
     .store-info h2{
         text-align:center;
