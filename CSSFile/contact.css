@@ -378,7 +378,11 @@
     }
 
     .hero {
-        height: 70vh;
+        height: 65vh;
+        min-height: 450px;
+        padding: 40px;
+        box-sizing: border-box;
+        padding-top: 225px;
     }
 
     .hero h1 {
