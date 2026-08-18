@@ -203,9 +203,6 @@ section h2 {
     margin: 0 0 30px 0;
     text-align: center;
     color: #5E3023;
-    font-family: 'Averia Libre', cursive;
-    font-size: 28px;
-    font-weight: 700;
 }
 
 .contact-box h2::after {
@@ -536,10 +533,6 @@ section h2 {
     .contact-box {
         width: 100%;
         padding: 25px 10px;
-    }
-
-    .contact-box h2 {
-        font-size: 25px;
     }
 
     .contact-section form {
