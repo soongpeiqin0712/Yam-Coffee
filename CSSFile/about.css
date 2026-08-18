@@ -611,8 +611,15 @@
         aspect-ratio: 1/1;
         margin: 0 auto 6px;
     }
+    /* 新增：手机端卡片内文字居中，解决justify造成巨大单词间距 */
+    .video-intro p,
+    .content-card.cream-card p {
+        text-align: center !important;
+        text-align-last: center !important;
+    }
 }
 @media (max-width: 575px) {
     .feature-grid { grid-template-columns: 1fr; }
 }
+
 
