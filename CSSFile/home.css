@@ -403,7 +403,7 @@
      }
      
      .menu-grid {        
-          grid-template-columns: 1fr;        
+          grid-template-columns: 2fr;        
           gap: 20px;        
           margin-top: 35px;    
      }    
@@ -430,7 +430,7 @@
      }
      
      .gallery-grid {        
-          grid-template-columns: 1fr;        
+          grid-template-columns: 2fr;        
           gap: 15px;        
           margin-top: 35px;    
      }    
