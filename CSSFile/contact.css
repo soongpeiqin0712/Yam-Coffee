@@ -380,7 +380,7 @@
     .hero {
         height: 65vh;
         min-height: 450px;
-        padding: 40px;
+        padding: 20px;
         box-sizing: border-box;
         padding-top: 160px;
     }
@@ -438,7 +438,7 @@
     .hero {
         height: 65vh;
         min-height: 450px;
-        padding: 40px;
+        padding: 20px;
         box-sizing: border-box;
         padding-top: 160px;
     }
