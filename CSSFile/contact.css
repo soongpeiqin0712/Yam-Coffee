@@ -379,7 +379,7 @@
 
     .hero {
         height: 65vh;
-        min-height: 450px;
+        min-height: 350px;
         padding: 20px;
         box-sizing: border-box;
         padding-top: 160px;
@@ -437,7 +437,7 @@
 @media (max-width: 500px) {
     .hero {
         height: 65vh;
-        min-height: 450px;
+        min-height: 350px;
         padding: 20px;
         box-sizing: border-box;
         padding-top: 160px;
