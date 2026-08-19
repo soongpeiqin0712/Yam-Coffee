@@ -459,37 +459,51 @@
     
     /* --------------FOOTER------------- */
     footer {
-        padding: 45px 6% 25px;
+        padding: 30px 6% 18px;
     }
 
     .footer_container {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 15px;
     }
 
     .footer_container > div {
-        padding: 0 10px 25px;
+        padding: 0 10px 15px;
         align-items: center;
         text-align: center;
     }
 
+    /*Divider*/
     .footer_container > div:not(:last-child) {
         border-bottom: 1px solid rgba(255,255,255,0.3);
-        padding-bottom: 25px;
+        padding-bottom: 15px;
     }
 
     .footer_container > div:not(:last-child)::after {
         display: none;
     }
 
+    /*Logo*/
     .footer_logo {
         text-align: center;
         align-items: center;
     }
 
     .footer_logo img {
-        width: 80px;
+        width: 65px;
+        height: 65px;
+        margin-bottom: 5px;
+    }
+
+    .footer_logo h3 {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    
+    .footer_logo p {
+        font-size: 13px;
+        line-height: 1.5;
     }
 
     .footer_contact {
@@ -497,29 +511,65 @@
         text-align: center;
     }
 
+    /*Contact*/
+    .footer_contact {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer_contact h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
     .footer_contact p {
-        justify-content: center;
+        font-size: 13px;
+        margin: 7px 0;
+        gap: 7px;
     }
 
+    .footer_contact img {
+        width: 19px;
+        height: 19px;
+    }
+
+    /*Social Media*/
     .social_links {
         align-items: center;
         text-align: center;
     }
 
-    .social_icons {
-        gap: 12px;
+    .social_links h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
     }
 
+    .social_icons {
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    .social_icons a {
+        width: 45px;
+        height: 45px;
+    }
+    
     .social_icons img {
         width: 40px;
         height: 40px;
     }
 
+    /*Copyright*/
     .footer_copy {
-        margin-top: 25px;
-        padding-top: 15px;
+        margin-top: 15px;
+        padding-top: 10px;
     }
-    
+
+    .footer_copy p {
+        margin: 3px 0;
+        font-size: 11px;
+    }
+        
     /* ----------BACK TO TOP---------- */
     #topBtn {
         width: 48px;
