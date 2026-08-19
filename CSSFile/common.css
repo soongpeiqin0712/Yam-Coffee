@@ -17,19 +17,7 @@
         scroll-behavior: smooth;
     }
 
-    #our-story,
-    #mission-vision,
-    #coffee-philo,
-    #our-team,
-    #why-choose,
-    #promo,
-    #coffee,
-    #beverage,
-    #dessert,
-    #store-info,
-    #map,
-    #hours,
-    #contact {
+    section[id] {
         scroll-margin-top: 100px;
     }
 
@@ -362,19 +350,7 @@
 /*-----------------MOBILE RESPONSIVE-------------------*/
 @media (max-width: 768px) {
     
-    #our-story,
-    #mission-vision,
-    #coffee-philo,
-    #our-team,
-    #why-choose,
-    #promo,
-    #coffee,
-    #beverage,
-    #dessert,
-    #store-info,
-    #map,
-    #hours,
-    #contact {
+    section[id] {
         scroll-margin-top: 85px;
     }
     
