@@ -139,9 +139,18 @@
         position: relative;
     }
 
-    .dropdown-list {
+    .dropdown::after {
+        content: "";
         position: absolute;
         top: 100%;
+        left: 0;
+        width: 100%;
+        height: 15px;
+    }
+
+    .dropdown-list {
+        position: absolute;
+        top: calc(100% + 10px);
         left: 0;
         background: white;
         min-width: 180px;
@@ -149,7 +158,9 @@
         box-shadow: 0 8px 20px rgba(0,0,0,.15);
         display: none;
         overflow: hidden;
-        margin-top: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 
     .dropdown-list li {
