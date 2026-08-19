@@ -427,12 +427,23 @@
      
      .gallery-item img {        
           width: 100%;
-          aspect-ratio: 16 / 9;
+          aspect-ratio: 3 / 2;
           height: auto;
           object-fit: cover;
           object-position: center;
           display: block;   
      }   
+
+     .gallery-overlay {
+          transform: translateY(0);
+          padding: 10px;
+    }
+
+    .gallery-overlay h3 {
+          margin: 0;
+          font-size: 1rem;
+          line-height: 1.2;
+    }
 
      /*---CTA---*/
      .cta {       
