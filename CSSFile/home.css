@@ -246,7 +246,7 @@
         color: white;
         padding: 20px;
         transform: translateY(100%);
-        transition: .35s;
+        transition: transform .35s ease;
     }
 
     .gallery-item:hover .gallery-overlay {
@@ -435,8 +435,12 @@
      }   
 
      .gallery-overlay {
-          transform: translateY(0);
           padding: 10px;
+          transform: translateY(100%);
+    }
+
+     .gallery-item.active .gallery-overlay {
+          transform: translateY(0);
     }
 
     .gallery-overlay h3 {
