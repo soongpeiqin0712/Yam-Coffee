@@ -389,16 +389,17 @@
      
      .menu-grid {        
           grid-template-columns: 1fr 1fr;        
-          gap: 20px;        
+          gap: 15px;        
           margin-top: 35px;    
      }    
      
      .menu-card img {
           width: 100%;
-          height: 220px;
-          object-fit: cover;
-          object-position: center;
+          aspect-ratio: 1 / 1;
+          height: auto;
+          object-fit: contain;
           display: block;   
+          background: #f5eee5;
      }    
      
      .menu-info {       
