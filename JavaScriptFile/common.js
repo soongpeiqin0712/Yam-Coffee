@@ -31,13 +31,15 @@ if (menuToggle && navLinks) {
     // Mobile dropdowns: first tap opens the dropdown; second tap follows the main link.
     document.querySelectorAll(".dropdown > a").forEach(link => {
         link.addEventListener("click", event => {
-            if (window.innerWidth <= 768) {
+            if (window.matchMedia("(max-width: 768px)").matches) {
                 const dropdown = link.parentElement;
 
                 if (!dropdown.classList.contains("open")) {
                     event.preventDefault();
                     document.querySelectorAll(".dropdown.open").forEach(item => {
-                        if (item !== dropdown) item.classList.remove("open");
+                        if (item !== dropdown) {
+                            item.classList.remove("open");
+                        }
                     });
                     dropdown.classList.add("open");
                 }
@@ -48,7 +50,7 @@ if (menuToggle && navLinks) {
     // Close the mobile menu after choosing a normal link.
     navLinks.querySelectorAll("li:not(.dropdown) > a, .dropdown-list a").forEach(link => {
         link.addEventListener("click", () => {
-            if (window.innerWidth <= 768) {
+            if (window.matchMedia("(max-width: 768px)").matches) {
                 navLinks.classList.remove("active");
                 menuToggle.textContent = "☰";
                 menuToggle.setAttribute("aria-expanded", "false");
