@@ -330,11 +330,7 @@
      .hero {
           min-height: 650px;     
           height: auto;     
-          padding: 110px 6% 60px;   
-          background-image: linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.35)), 
-          url("../Image/home/img_home_hero.jpg");
-          background-size: cover;
-          background-position: center;   
+          padding: 110px 6% 60px;     
           background-repeat: no-repeat;
      }
                            
@@ -428,13 +424,8 @@
 
      /*---CTA---*/
      .cta {       
-          background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-          url("../Image/home/img_home_hero.jpg");
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          padding: 60px 5%;    
-          background: scroll;
+          background-attachment: scroll;
+          padding: 60px 5%;   
      }    
 
      .cta h2 {
