@@ -436,7 +436,6 @@
 
      .gallery-overlay {
           padding: 10px;
-          transform: translateY(100%);
     }
 
      .gallery-item.active .gallery-overlay {
