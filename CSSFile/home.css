@@ -388,13 +388,17 @@
      }
      
      .menu-grid {        
-          grid-template-columns: 2fr;        
+          grid-template-columns: repeat(2, 1fr);        
           gap: 20px;        
           margin-top: 35px;    
      }    
      
      .menu-card img {
-          height: 200px;    
+          width: 100%;
+          height: 220px;
+          object-fit: cover;
+          object-position: center;
+          display: block;   
      }    
      
      .menu-info {       
@@ -415,7 +419,7 @@
      }
      
      .gallery-grid {        
-          grid-template-columns: 2fr;        
+          grid-template-columns: repeat(2, 1fr);        
           gap: 15px;        
           margin-top: 35px;    
      }    
