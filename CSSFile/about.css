@@ -370,6 +370,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 92%;
 }
 .card-logo-top {
     width: 380px;
@@ -635,6 +637,8 @@
         font-size:16px;
     }
 }
+
+
 
 
 
