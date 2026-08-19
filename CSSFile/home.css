@@ -403,12 +403,26 @@
      }    
      
      .menu-info {       
-          padding: 20px;    
+          padding: 12px;    
      }    
      
      .menu-info h3 {        
-          font-size: 1.3rem;    
+          font-size: 1.15rem;   
+          line-height: 1.4;
+          min-height: 52px;
+          margin-bottom: 8px;
      }    
+
+     .menu-info p {
+         font-size: .85rem;
+         line-height: 1.5;
+         margin-bottom: 10px;
+     }
+     
+     .menu-info span {
+         font-size: 1rem;
+         margin-top: 8px;
+     }
 
      /*---GALLERY---*/
      .gallery {        
