@@ -406,6 +406,10 @@
         display: none;
     }
 
+    .dropdown {
+        position: relative;
+    }
+    
     /*Dropdown is opened by JS on touch/mobile instead of hover*/
     .dropdown:hover .dropdown-list {
         display: none;
@@ -417,15 +421,18 @@
 
     .dropdown-list {
         position: static;
+        display: none;
         width: 100%;
         min-width: 0;
         margin: 0;
+        padding: 0;
         border-radius: 0;
         box-shadow: none;
         background: rgba(255,255,255,.08);
     }
 
     .dropdown-list a {
+        display: block;
         color: white;
         padding: 10px 20px;
         font-size: .9rem;
