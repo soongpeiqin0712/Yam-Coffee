@@ -1338,6 +1338,8 @@ body {
         padding: 10px;
         border-radius: 22px;
         box-shadow: none;
+        background-color: #F3E9DC;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
 
     .Discount:hover{
