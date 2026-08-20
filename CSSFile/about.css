@@ -1,4 +1,4 @@
-/* ========== 全局配色变量规范 ========== */
+
 .cream-bg { background-color: #F3E9DC; }
 .white-bg { background-color: #ffffff; }
 .brownie-bg { background-color: #5E3023; color: #fff; }
@@ -6,7 +6,7 @@
 .caramel-color { color: #C08552; }
 .brownie-color { color: #5E3023; }
 
-/* ========== 基础卡片重置（通栏无圆角无阴影） ========== */
+
 .content-card, .white-card, .cream-card {
     border-radius: 0;
     padding: 0;
@@ -16,7 +16,7 @@
 }
 .content-card:hover { transform: none; }
 
-/* ========== 图片容器基础样式 ========== */
+
 .card-image-box {
     width: 100%;
     margin: 0.4rem 0 36px;
@@ -30,7 +30,7 @@
     background-position: center;
     box-shadow: none;
 }
-/* 背景图地址 */
+
 .hero-img { background-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de5661'); }
 .story-img { background-image: url('../Image/about/17.png'); }
 .mission-img, .philo-img { background-image: url('https://images.unsplash.com/photo-1509042239860-f550870bd97'); }
@@ -38,7 +38,7 @@
 .choose-img { background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085'); }
 .philo-img { display: none; }
 
-/* ========== 通用装饰元素 ========== */
+
 .section-tag {
     display: block;
     text-align: center;
@@ -58,7 +58,7 @@
 }
 .center-line { margin-inline: auto; }
 
-/* ========== 按钮通用样式 ========== */
+
 .btn {
     padding: 14px 32px;
     border: none;
@@ -86,7 +86,7 @@
     box-shadow: 0 6px 16px rgba(94, 48, 35, 0.35);
 }
 
-/* ========== 全局板块通用文字 ========== */
+
 .section-block {
     width: 100%;
     position: relative;
@@ -113,7 +113,7 @@
     margin: 1.5rem auto 2.5rem;
     line-height: 1.9;
 }
-/* 正文统一排版规则：两端对齐，避免孤行 */
+
 .section-text {
     text-align: justify;
     text-align-last: left;
@@ -143,14 +143,14 @@
     widows: 2;
     line-height: 1.7;
 }
-/* 新增：全局英文换行，防止移动端长英文单词撑破盒子 */
+
 .section-text, .value-desc, .video-intro p, .card-box p{
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: normal;
 }
 
-/* ========== Hero全屏轮播头部 ========== */
+
 .about-hero {
     min-height: 100vh;
     position: relative;
@@ -226,7 +226,7 @@
     text-align: left;
 }
 
-/* 背景轮播动画 */
+
 @keyframes slide-loop {
     0% { transform: translateX(0); }
     28% { transform: translateX(0); }
@@ -269,7 +269,7 @@
     filter: brightness(65%);
 }
 
-/* ========== 左右图文布局（Our Story / Coffee Philosophy） ========== */
+
 .content-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -281,7 +281,6 @@
 .reverse-row .text-col { direction: ltr; }
 .text-col .section-heading { text-align: left; }
 .text-col .divider-line { margin: 0 0 1.5rem 0; }
-/* Our Story 专属：文字卡片无边框透明 */
 .our-story .text-col .content-card.cream-card {
     background: transparent;
     border: none;
@@ -292,7 +291,7 @@
 .our-story .content-row { align-items: center; }
 .our-story .image-col .img-placeholder { margin-top: 0; }
 
-/* ========== 通用高级渐变卡片（Mission/Vision/咖啡哲学右侧卡片共用） ========== */
+
 .card-box, .content-card.cream-card {
     border: 2px solid transparent;
     background: linear-gradient(#fff, #fff) padding-box, linear-gradient(130deg, #d4b89e, #b89472) border-box;
@@ -304,7 +303,7 @@
     transform: translateY(-6px);
     box-shadow: 0 10px 30px rgba(88, 48, 26, 0.1);
 }
-/* 双栏Mission Vision卡片 */
+
 .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -324,7 +323,7 @@
     letter-spacing: 1px;
     text-align: center;
 }
-/* 圆形图标样式 */
+
 .card-icon {
     width: 96px;
     height: 96px;
@@ -362,7 +361,7 @@
     line-height: 1.75;
 }
 
-/* ========== 咖啡哲学右侧卡片内部排版（Logo+文字+视频） ========== */
+
 .content-card.cream-card {
     padding: 16px 28px;
     height: 100%;
@@ -428,7 +427,7 @@
     border-radius: 12px;
 }
 
-/* ========== 核心价值观板块 ========== */
+
 .core-values-card {
     padding: 60px 60px 80px;
     box-sizing: border-box;
@@ -436,7 +435,7 @@
 .values{
     padding: 50px 60px 80px;
 }
-/* 标题强制水平居中，增加标题上方、下方间距，远离顶部边框 */
+
 .core-values-card h2 {
     text-align: center;
     margin-top: 40px;
@@ -448,7 +447,7 @@
     text-align: center;
     margin: 40px 0 35px;
 }
-/* 顶部标签居中 */
+
 .value-tags {
     display: flex;
     flex-wrap: wrap;
@@ -469,7 +468,7 @@
     gap: 28px;
     margin-top: 16px;
 }
-/* 每个价值观栏目框，移除左右固定margin，消除横向滚动 */
+
 .value-item {
     background-color: #f9f4eb;
     border-radius: 12px;
@@ -507,7 +506,7 @@
     margin: 0 0 12px 0;
 }
 
-/* ========== Our Team 团队卡片 ========== */
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -533,7 +532,7 @@
     font-weight: 500;
 }
 
-/* ========== Why Choose Us 优势网格 ========== */
+
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -578,7 +577,7 @@
     color: #5E3023;
 }
 
-/* ========== 媒体查询 响应式适配（统一合并） ========== */
+
 @media (max-width: 1024px) {
     .values-wrap { grid-template-columns: repeat(2, 1fr); }
 }
@@ -599,14 +598,14 @@
     .card-box, .content-card.cream-card { padding: 36px 20px; }
     .values.full-card h3 { font-size: 1.6rem; }
     .value-label { font-size: 1.15rem; }
-    /* 手机端缩小价值观模块内边距 */
+ 
     .core-values-card {
         padding: 30px 20px 40px;
     }
     .values {
         padding: 30px 20px 40px;
     }
-    /* logo 限制最大宽度，防止溢出屏幕 */
+  
     .card-logo-top {
         width: 280px;
         max-width: 85%;
@@ -614,14 +613,14 @@
         aspect-ratio: 1/1;
         margin: 0 auto 6px;
     }
-    /* ⚠️只保留video‑intro内部文字居中，不干扰Our Story section-text */
+   
     .video-intro p {
         text-align: center !important;
         text-align-last: center !important;
     }
 }
 @media (max-width: 575px) {
-    /* 小屏手机：2个卡片一排 */
+   
     .feature-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
